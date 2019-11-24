@@ -24,7 +24,7 @@ Text inside the alternative method box show another or more different ways of do
 
 ### I.3. Notes and comments
 
-<table><tr><td>
+<table><tr><td style="font-size:0.8em">
   <b>Note:</b> A note is something that needs to be mentioned but is apart from the context.
 </td></tr></table>
 
