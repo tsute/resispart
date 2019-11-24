@@ -1,9 +1,9 @@
 <div align="center">By <i>Tsute George Chen</i>, The Forsyth Institute, Cambridge, MA, USA</div>
 
-## Part I. Instruction on How to use this Workshop Toturial
+## Part I. Instruction on how to use this workshop Toturial
 
-### R Code Box
-The text in the box with black background contains the R codes that you can highlight, copy and paste into your R command-line interface.
+### 1. R Code Box
+The text in the light-gray box contains the R codes that you can highlight, copy and paste into your R command-line interface.
 For example:
 ``` R
 #Below is a working R code that you can copy and paste into your R to execuate some R commands
@@ -11,7 +11,7 @@ ls()
 message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 ```
 
-<table style="text-align:left;background-color:#BFDFFF">
+<table style="text-align:left;background-color:#BFDFFF;font-size:0.8em">
 <tr><td bgcolor="#99CCFF">Alternative</td></tr>
 <tr><td>this is a alternative box</td></tr>
 </table>
