@@ -1,8 +1,10 @@
-# 2019RESISTPART Bioinformatics Workshop
-2019 RESISTPART Bioinformatics Workshop Tutorial
+# 2019 RESISTPART Bioinformatics Workshop
+Workshop Tutorial
 
-Hello Everyone!
+## Instruction on How to use this Workshop Toturial
 
-Workshop Tutorial 
+
+
+##Workshop Tutorial 
 
 Part1
