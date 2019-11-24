@@ -3,6 +3,12 @@
 
 @import "{{ site.theme }}";
 
+
+body {
+  font-size: 14px;
+  color: #333333;
+}
+
 .page-header {
   color: $header-heading-color;
   text-align: center;
@@ -18,3 +24,11 @@
     padding: 1rem 1rem;
   }
 }
+
+table {
+    td {
+      padding: 0rem 0rem;
+      border: 0px ;
+    }
+  }
+
