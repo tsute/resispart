@@ -21,6 +21,19 @@ body {
     padding: 0rem 0rem;
   }
 }
+
+.project-tagline {
+  @include large {
+    font-size: 1.8rem;
+  }
+  @include medium {
+    font-size: 1.5rem;
+  }
+  @include small {
+    font-size: 1.2rem;
+  }
+}
+
 table {
   td{
       padding: 0rem 0rem;
