@@ -15,7 +15,7 @@ message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 ```
 
 <table width="100%">
-<tr><th align="left" bgcolor="navy">Alternative</th></tr>
+<tr><th style="text-align:left">Alternative</th></tr>
 <tr><td>this is a alternative box</td></tr>
 </table>
 
