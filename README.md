@@ -15,7 +15,7 @@ message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 
 Text inside the alternative method box show another or more different ways of doing the same thing:
 
-<table style="border:0px"><tr><td>
+<table style="border:0px" cellspacing="0" cellpadding="0"><tr><td>
 <table style="text-align:left;background-color:#EEEEEE;font-size:0.8em">
 <tr><td width="100%" bgcolor="#99CCFF">Alternative</td></tr>
 <tr><td>This is where other ways of doing the same thing will be described.</td></tr></table>
@@ -23,7 +23,9 @@ Text inside the alternative method box show another or more different ways of do
 
 ### I.3. Notes and comments
 
+<table><tr><td>
 **Note:** a note is something that needs to be mentioned but is apart from the context.
+</td></tr></table>
 
 ## Part II. Workshop Tutorial
 
