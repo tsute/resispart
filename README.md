@@ -15,8 +15,8 @@ message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 
 Text inside the alternative method box show another or more different ways of doing the same thing:
 
-<table style="text-align:left;background-color:#BFDFFF;font-size:0.8em">
-<tr><td bgcolor="#99CCFF">Alternative</td></tr>
+<table style="text-align:left;background-color:#99CCFF;font-size:0.8em">
+<tr><td width="100%" bgcolor="#EEEEEE">Alternative</td></tr>
 <tr><td>This is where other ways of doing the same thing will be described.</td></tr>
 </table>
 
