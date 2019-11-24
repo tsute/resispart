@@ -11,7 +11,7 @@ For example:
 ls()
 message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 ```
-
+test
 
 ## Part II. Workshop Tutorial
 
