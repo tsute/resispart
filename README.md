@@ -1,4 +1,4 @@
-## 2019 RESISTPART Bioinformatics Workshop
+#### By *Tsute George Chen*, The Forsyth Institute, Cambridge, MA, USA
 
 
 ## Part I. Instruction on How to use this Workshop Toturial
