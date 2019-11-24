@@ -1,6 +1,5 @@
 <div align="center">By <i>Tsute George Chen</i>, The Forsyth Institute, Cambridge, MA, USA</div>
 
-
 **Note:** this is something I don't want to call attention to.
 
 
@@ -14,8 +13,9 @@ For example:
 ls()
 message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 ```
+
 <table width="100%">
-  <tr><th style="text-align:left" >Alternative</th></tr>
+<tr><th style="text-align:left" >Alternative</th></tr>
 <tr><td>this is a alternative box</td><tr>
 </table>
 
@@ -24,7 +24,6 @@ message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 ## Part II. Workshop Tutorial
 
 Something here
-<
 ### 1. Introduction
 
 ### 2. Installation of the R software and packages for analyzing microbiome sequence data
