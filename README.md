@@ -16,7 +16,7 @@ message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 
 <table width="100%">
 <tr><th style="text-align:left" >Alternative</th></tr>
-<tr><td>this is a alternative box</td><tr>
+<tr><td>this is a alternative box</td></tr>
 </table>
 
 **Note:** a note is something that needs to be mentioned but is apart from the context.
