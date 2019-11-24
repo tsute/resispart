@@ -1,4 +1,4 @@
-<div align="center"<i>Tsute Chen (George)</i><br>
+<div align="center"><i>Tsute Chen (George)</i><br>
   The Forsyth Institute, Cambridge, MA, USA</div>
 
 ## Part I. Instroduction - how to use this workshop tutorial
