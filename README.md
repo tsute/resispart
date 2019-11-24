@@ -2,7 +2,7 @@
 
 ## Part I. Instruction on how to use this workshop Toturial
 
-### 1. R Code Box
+### I.1. R Code Box
 The text in the light-gray box contains the R codes that you can highlight, copy and paste into your R command-line interface.
 For example:
 ``` R
@@ -11,9 +11,13 @@ ls()
 message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 ```
 
+### I.2. Alternataive method box
+
+Text inside the alternative method box show another or more different ways of doing the same thing:
+
 <table style="text-align:left;background-color:#BFDFFF;font-size:0.8em">
 <tr><td bgcolor="#99CCFF">Alternative</td></tr>
-<tr><td>this is a alternative box</td></tr>
+<tr><td>This is where other ways of doing the same thing will be described.</td></tr>
 </table>
 
 **Note:** a note is something that needs to be mentioned but is apart from the context.
