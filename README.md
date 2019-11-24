@@ -14,12 +14,17 @@ For example:
 ls()
 message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 ```
+<table width="100%">
+  <tr><th style="text-align:left" >Alternative</th></tr>
+<tr><td>this is a alternative box</td><tr>
+</table>
+
 **Note:** a note is something that needs to be mentioned but is apart from the context.
 
 ## Part II. Workshop Tutorial
 
 Something here
-
+<
 ### 1. Introduction
 
 ### 2. Installation of the R software and packages for analyzing microbiome sequence data
