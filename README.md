@@ -11,7 +11,7 @@ ls()
 message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 ```
 
-<table style="text-align:left;background-color:#BFDFFF" width="100%">
+<table style="text-align:left;background-color:#BFDFFF">
 <tr><td bgcolor="#99CCFF">Alternative</td></tr>
 <tr><td>this is a alternative box</td></tr>
 </table>
