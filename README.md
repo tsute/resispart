@@ -1,7 +1,7 @@
 <div align="center">By <i>Tsute George Chen</i><br>
   The Forsyth Institute, Cambridge, MA, USA</div>
 
-## Part I. Instruction on how to use this workshop tutorial
+## Part I. Instroduction - how to use this workshop tutorial
 
 ### 1. R Code Box
 The text in the light-gray box contains the R codes that you can highlight (mouse drag), copy (control-C) and paste (control-V) into your R command-line interface.
