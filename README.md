@@ -20,6 +20,8 @@ Text inside the alternative method box show another or more different ways of do
 <tr><td>This is where other ways of doing the same thing will be described.</td></tr>
 </table>
 
+### I.3. Notes and comments
+
 **Note:** a note is something that needs to be mentioned but is apart from the context.
 
 ## Part II. Workshop Tutorial
