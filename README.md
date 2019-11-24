@@ -1,8 +1,5 @@
 <div align="center">By <i>Tsute George Chen</i>, The Forsyth Institute, Cambridge, MA, USA</div>
 
-**Note:** this is something I don't want to call attention to.
-
-
 ## Part I. Instruction on How to use this Workshop Toturial
 
 ### R Code Box
