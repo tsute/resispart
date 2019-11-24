@@ -32,6 +32,8 @@ This is where other ways of doing the same thing will be described
 
 ## Part II. Workshop Tutorial
 
+#### Analysis of 16S rRNA gene sequences for microbiome diversity study
+
 ### 1. Introduction
 
 ### 2. Installation of the R software and packages for analyzing microbiome sequence data
