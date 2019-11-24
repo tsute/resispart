@@ -1,8 +1,8 @@
 By *Tsute George Chen*, The Forsyth Institute, Cambridge, MA, USA
-{: .alert .alert-info .text-center}
+
 
 **Note:** this is something I don't want to call attention to.
-{: .note}
+
 
 ## Part I. Instruction on How to use this Workshop Toturial
 
