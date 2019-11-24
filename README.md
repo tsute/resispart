@@ -1,4 +1,4 @@
-<div align="center">By <i>Tsute George Chen</i>
+<div align="center">By <i>Tsute George Chen</i><br>
   The Forsyth Institute, Cambridge, MA, USA</div>
 
 ## Part I. Instruction on how to use this workshop tutorial
