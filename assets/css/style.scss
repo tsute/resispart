@@ -2,12 +2,10 @@
 ---
 $section-headings-color=#333333;
 @import "{{ site.theme }}";
-
 body {
   font-size: 12px;
   color: #333333;
 }
-
 .page-header {
   color: $header-heading-color;
   text-align: center;
@@ -23,9 +21,8 @@ body {
     padding: 1rem 1rem;
   }
 }
-
 table {
       padding: 0rem 0rem;
       border: 0px ;
-  }
+}
 
