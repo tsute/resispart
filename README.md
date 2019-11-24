@@ -4,8 +4,7 @@
 ## Part I. Instroduction - how to use this workshop tutorial
 
 ### 1. R Code Box
-The text in the light-gray box contains the R codes that you can highlight (mouse drag), copy (control-C) and paste (control-V) into your R command-line interface.
-For example:
+The text in the light-gray box contains the R codes that you can highlight (by dragging your mouse), copy (use the control-C key combination) and paste (control-V) into your R command-line interface on your computer. For example:
 ``` R
 #Below is a working R code that you can copy and paste into your R to execuate some R commands
 ls()
