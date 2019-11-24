@@ -3,7 +3,7 @@
 
 ## Part I. Instruction on how to use this workshop tutorial
 
-### I.1. R Code Box
+### 1. R Code Box
 The text in the light-gray box contains the R codes that you can highlight (mouse drag), copy (control-C) and paste (control-V) into your R command-line interface.
 For example:
 ``` R
@@ -12,7 +12,7 @@ ls()
 message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 ```
 
-### I.2. Alternative method box
+### 2. Alternative method box
 
 Text inside the alternative method box show another or more different ways of doing the same thing:
 
@@ -22,7 +22,7 @@ Text inside the alternative method box show another or more different ways of do
 <tr><td>This is where other ways of doing the same thing will be described.</td></tr></table>
 </td></tr></table>
 
-### I.3. Notes and comments
+### 3. Notes and comments
 
 <table><tr><td style="font-size:0.8em">
   <b>Note:</b> A note is something that needs to be mentioned but is apart from the context.
