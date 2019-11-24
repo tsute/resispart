@@ -28,7 +28,6 @@ This is where other ways of doing the same thing will be described
 
 ## Part II. Workshop Tutorial
 
-Something here
 ### 1. Introduction
 
 ### 2. Installation of the R software and packages for analyzing microbiome sequence data
