@@ -22,7 +22,7 @@ This is where other ways of doing the same thing will be described
 
 ### 3. Notes and comments
 
-<table  bgcolor="#CCCCCC"><tr><td style="font-size:0.8em;font-style:italic;">
+<table  bgcolor="#DDDDDD"><tr><td style="font-size:0.8em;font-style:italic;">
   <b>Note:</b> A note is something that needs to be mentioned but is apart from the context.
 </td></tr></table>
 
