@@ -127,7 +127,7 @@ log10(1000)        # common log of 1000
 pi                 # 3.14159... 
 ```
 
-<h4 style="font-weight:bold;color:navy"> Store result (or anything) in a variable (object)</h4
+<h4 style="font-weight:bold;color:navy"> Store result (or anything) in a variable (object)</h4>
 
 ```R
 # Assign a number in a variable
