@@ -68,6 +68,7 @@ For a complete list of all the mirrored sites in different country, visit this l
   
 </td></tr></table>
 
+<br>
 
 <table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em">
 Alterntaively you can downlaod another version of R, Microsoft R Open here:
