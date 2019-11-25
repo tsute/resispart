@@ -57,14 +57,14 @@ click above link and
 These are some other mirrored web sites that provide this download:<br><br>
 
 Brazil<br>
-https://nbcgib.uesc.br/mirrors/cran/	Computational Biology Center at Universidade Estadual de Santa Cruz<br>
-https://cran-r.c3sl.ufpr.br/	Universidade Federal do Parana<br>
-https://cran.fiocruz.br/	Oswaldo Cruz Foundation, Rio de Janeiro<br>
-https://vps.fmvz.usp.br/CRAN/	University of Sao Paulo, Sao Paulo<br>
-https://brieger.esalq.usp.br/CRAN/	University of Sao Paulo, Piracicaba<br>
+[https://nbcgib.uesc.br/mirrors/cran/]	Computational Biology Center at Universidade Estadual de Santa Cruz<br>
+[https://cran-r.c3sl.ufpr.br/]	Universidade Federal do Parana<br>
+[https://cran.fiocruz.br/]	Oswaldo Cruz Foundation, Rio de Janeiro<br>
+[https://vps.fmvz.usp.br/CRAN/]	University of Sao Paulo, Sao Paulo<br>
+[https://brieger.esalq.usp.br/CRAN/]	University of Sao Paulo, Piracicaba<br>
 <br><br>
 For a complete list of all the mirrored sites in different country, visit this link:<br>
-https://cran.r-project.org/mirrors.html
+[https://cran.r-project.org/mirrors.html]
   
 </td></tr></table>
 
