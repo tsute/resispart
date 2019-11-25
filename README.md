@@ -1,7 +1,7 @@
 <div align="center"><i>Tsute Chen (George)</i><br>
   The Forsyth Institute, Cambridge, MA, USA</div>
 
-<h2> Part I. Instroduction - how to use this workshop tutorial</h2>
+<h2> Part I. Introduction - how to use this workshop tutorial</h2>
 
 <h3>1. R Code Box</h3>
 
