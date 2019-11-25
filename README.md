@@ -149,12 +149,48 @@ y
 
 #### R data types
 
+R has 5 different data types:
+1) character
+2) numeric (real or decimal)
+3) integer
+4) logical (true or false)
+5) complex
+
 
 #### R data structures
+
+The data (of different types) can be combined to form data structures
+1) vectors - list of multiple data of the same type
+2) list - list of multiple data of various types
+3) matrix 
+4) data frame
+5) factors
+
+#### Beyound basic R - install R packages
+
+Copy and paste the below R package installation codes to install the packaged required by this workshop:
+
+```R
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("dada2")
+BiocManager::install("ggplot2")  
+BiocManager::install("ggpubr")
+BiocManager::install("phyloseq")
+BiocManager::install("Biostrings")
+BiocManager::install("xlsx")
+
+```
 
 <br><br>
 
 ### 4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads
+
+Demo data download:
+1) Demo sequences - click to download
+2) Demo R objects - click to download
+
+Install
 
 ### 5. Use of the R Phyloseq package to study microbial diversity
 
