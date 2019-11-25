@@ -102,7 +102,7 @@ message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 ```
 
 You should get an output like this:
-<img src="https://gyazo.com/bcbdbca157c0f9e720a2a63a44844a6d.png>
+<img src="https://gyazo.com/bcbdbca157c0f9e720a2a63a44844a6d.png">
 
 
 #### Using R as a calculator
