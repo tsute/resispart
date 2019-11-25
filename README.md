@@ -121,6 +121,21 @@ log10(1000)        # common log of 1000
 pi                 # 3.14159... 
 ```
 
+#### Store result (or anything) in a variable (object)
+
+```R
+# Assign a number in a variable
+x <- 5
+# This works exactly the same
+x = 5
+# Now just type the variable name to print out its content
+5
+#
+# Let get more complicated
+longvariablename = "This is the content of a variable with a longe name"
+longvariablename
+```
+
 ### 4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads
 
 ### 5. Use of the R Phyloseq package to study microbial diversity
