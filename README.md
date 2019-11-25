@@ -48,9 +48,9 @@ In this workshop we will use several sotftware packges developed on the R platfo
 
 For this workshop we will pratice the analysis on Widnows 10 Pcs so we can download the latest R for Windows computers from this link:
 
-https://vps.fmvz.usp.br/CRAN/bin/windows/base/R-3.6.1-win.exe
+[https://vps.fmvz.usp.br/CRAN/bin/windows/base/R-3.6.1-win.exe]
 
-
+click above link and 
 
 <table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em" width="100%">
 <b>Alternative:</b><br>
