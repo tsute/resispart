@@ -197,7 +197,7 @@ library("xlsx")
 
 ### 4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads
 
-First we need to download a set of demo Illumina 16S rRNA sequences:
+#### Step 1. First we need to download a set of demo Illumina 16S rRNA sequences:
 
 ftp://www.homd.org/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip
 
@@ -207,7 +207,7 @@ http://www.homd.org/ftp/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zi
 
 The file size is 1.1Gb so it may take some time to download, depending on the Internet connection speed.
 
-#### Step 1. Find the sequence data
+#### Step 2. Find the sequence data
 
 ```R
 dir.create("fastq", showWarnings = F)
@@ -220,7 +220,7 @@ sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
 
 ```
 
-#### Step 2. Quality plots
+#### Step 3. Quality plots
 
 ```R
 plotQualityProfile(c(fnFs[1],fnRs[1]))
@@ -240,7 +240,7 @@ dev.off()
 
 ```
 
-#### Step 3. Filter and trimm sequences
+#### Step 4. Filter and trimm sequences
 
 ```R
 dir.create("filtered", showWarnings = FALSE)
@@ -252,7 +252,7 @@ reads.filtered <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(280,220),
 
 ```
 
-#### Step 4. Learn sequence error rates to build error models for denoise purpose
+#### Step 5. Learn sequence error rates to build error models for denoise purpose
 
 ```R
 dir.create("err_plots", showWarnings = FALSE)
@@ -271,7 +271,7 @@ dev.off()
 
 ```
 
-#### Step 5. De-replicate reads 
+#### Step 6. De-replicate reads 
 
 ```R
 #derepFastq.start=Sys.time()
@@ -281,7 +281,7 @@ derepRs <- derepFastq(filtRs, verbose=TRUE)
 
 ```
 
-#### Step 6. Denoise sequences based on the error model to product amplicon sequence variants (ASVs)
+#### Step 7. Denoise sequences based on the error model to product amplicon sequence variants (ASVs)
 
 ```R
 names(derepFs) <- sample.names
@@ -294,7 +294,7 @@ dadaRs <- dada(derepRs, err=errR, multithread=TRUE)
 
 ```
 
-#### Step 7. Merge the pair-end reads to single reads
+#### Step 8. Merge the pair-end reads to single reads
 
 ```R
 mergers <- mergePairs(dadaFs, derepFs, dadaRs, derepRs, verbose=TRUE)
@@ -302,7 +302,7 @@ seqtab <- makeSequenceTable(mergers)
 write.table(t(seqtab),file="seqtab.txt",sep="\t",quote=FALSE)
 ```
 
-#### Step 8. Identify chimera and remove them
+#### Step 9. Identify chimera and remove them
 
 ```R
 #bimera.start=Sys.time()
@@ -312,7 +312,7 @@ write.table(t(seqtab.nochim),file="seqtab.nochim",sep="\t",quote=FALSE)
 
 ```
 
-#### Step 9. Make a summary table for the above processes
+#### Step 10. Make a summary table for the above processes
 
 ```R
 library(xlsx)
@@ -328,7 +328,7 @@ write.xlsx(t(track),file="dada2_summary.xlsx",sheetName="dada2 summary")
 
 ```
 
-#### Step 10. Assign ASVs with taxonomy
+#### Step 11. Assign ASVs with taxonomy
 
 ```R
 #taxa.start=Sys.time()
