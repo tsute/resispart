@@ -1,5 +1,5 @@
-<div align="center"><i>Tsute Chen (George)</i><br>
-  The Forsyth Institute, Cambridge, MA, USA</div>
+<div align="center">Tsute Chen (George)<br>
+  <i>The Forsyth Institute, Cambridge, MA, USA</i></div>
 
 <h2> Part I. Introduction - how to use this workshop tutorial</h2>
 
