@@ -46,14 +46,29 @@ R is short for "The R Project for Statistical Computing" and is a free software 
 
 In this workshop we will use several sotftware packges developed on the R platform. Henct the first thing is to download and install R on your computer.
 
-For this workshop we will pratice the analysis on Widnows 10 Pcs so we can download the latest R for Windows computers from these mirrored web site:
+For this workshop we will pratice the analysis on Widnows 10 Pcs so we can download the latest R for Windows computers from this link:
 
+https://vps.fmvz.usp.br/CRAN/bin/windows/base/R-3.6.1-win.exe
+
+
+
+<table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em" width="100%">
+<b>Alternative:</b><br>
+These are some other mirrored web sites that provide this download:<br><br>
+  
+<pre>
 Brazil
 https://nbcgib.uesc.br/mirrors/cran/	Computational Biology Center at Universidade Estadual de Santa Cruz
 https://cran-r.c3sl.ufpr.br/	Universidade Federal do Parana
 https://cran.fiocruz.br/	Oswaldo Cruz Foundation, Rio de Janeiro
 https://vps.fmvz.usp.br/CRAN/	University of Sao Paulo, Sao Paulo
 https://brieger.esalq.usp.br/CRAN/	University of Sao Paulo, Piracicaba
+</pre>
+<br><br>
+For a complete list of all the mirrored sites in different country, visit this link:<br>
+https://cran.r-project.org/mirrors.html
+  
+</td></tr></table>
 
 
 
