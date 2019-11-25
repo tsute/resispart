@@ -62,20 +62,20 @@ click above link and save the file to the default download location on your comp
 These are some other mirrored web sites that provide this download:<br><br>
 
 Brazil<br>
-<https://nbcgib.uesc.br/mirrors/cran/>	Computational Biology Center at Universidade Estadual de Santa Cruz<br>
-<https://cran-r.c3sl.ufpr.br/>	Universidade Federal do Parana<br>
-<https://cran.fiocruz.br/>	Oswaldo Cruz Foundation, Rio de Janeiro<br>
-<https://vps.fmvz.usp.br/CRAN/> University of Sao Paulo, Sao Paulo<br>
-<https://brieger.esalq.usp.br/CRAN/>	University of Sao Paulo, Piracicaba<br>
+<a href="https://nbcgib.uesc.br/mirrors/cran/">	Computational Biology Center at Universidade Estadual de Santa Cruz</a><br>
+<a href="https://cran-r.c3sl.ufpr.br/">	Universidade Federal do Parana</a><br>
+<a href="https://cran.fiocruz.br/">	Oswaldo Cruz Foundation, Rio de Janeiro</a><br>
+<a href="https://vps.fmvz.usp.br/CRAN/"> University of Sao Paulo, Sao Paulo</a><br>
+<a href="https://brieger.esalq.usp.br/CRAN/">	University of Sao Paulo, Piracicaba</a><br>
 <br><br>
 For a complete list of all the mirrored sites in different country, visit this link:<br>
-<https://cran.r-project.org/mirrors.html>
+<a href="https://cran.r-project.org/mirrors.html">https://cran.r-project.org/mirrors.html</a>
   
 </td></tr></table>
 <br>
 <table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em">
-Alterntaively you can downlaod another version of R, Microsoft R Open here:<br>
-<https://mran.microsoft.com/open> <br>
+You can also downlaod another version of R, Microsoft R Open here:<br>
+<a href="https://mran.microsoft.com/open">https://mran.microsoft.com/ope</a><br>
 It's an enhanced version of the original R. The most important feature of R Open is that it can use the multiple computer CPU cores hence it can speed up many process during the analysis. The R version for Windows can only use a single core hence it can be very slow, especially with a larger (sequence) data set.
 </td></tr></table> 
 
@@ -197,11 +197,11 @@ library("xlsx")
 
 <h4 style="font-weight:bold;color:#008C23"> Step 1. First we need to download a set of demo Illumina 16S rRNA sequences</h4>
 
-ftp://www.homd.org/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip
+<ftp://www.homd.org/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip>
 
 If the above link doesn't work use this alternative link:
 
-http://www.homd.org/ftp/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip
+<http://www.homd.org/ftp/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip>
 
 The file size is 1.1Gb so it may take some time to download, depending on the Internet connection speed.
 
@@ -343,15 +343,17 @@ head(taxa.print)
 
 
 
-### 5. Use of the R Phyloseq package to study microbial diversity
+<h3 style="font-weight:bold;color:brown"> 5. Use of the R Phyloseq package to study microbial diversity</h3>
 
 Under construction ...
 
 
-### 6. Use of the MicrobiomeAnalyst online tools for statistical, visual and meta-analysis of microbiome data
+
+<h3 style="font-weight:bold;color:brown"> 6. Use of the MicrobiomeAnalyst online tools for statistical, visual and meta-analysis of microbiome data</h3>
 
 Link to Achal's MicrobiomeAnalyst tutorial <font color="red">(Achal, please write your own tutorial, or if you alreay have one, please give me the link so I can embed the link to your tutorial here)</font>
 
-### 7. Beyond microbiome sequence data – Meta-genomic and Meta-transcriptomic data
+
+<h3 style="font-weight:bold;color:purple"> 7. Beyond microbiome sequence data – Meta-genomic and Meta-transcriptomic data</h3>
 
 Under contruction ...
