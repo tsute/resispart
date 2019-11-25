@@ -136,7 +136,7 @@ longvariablename = "This is the content of a variable with a longe name"
 longvariablename
 # Store the result of a calculation in the variable
 y = 1+2+3+4+5+6+7+8
-
+y
 ```
 
 ### 4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads
