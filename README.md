@@ -50,9 +50,9 @@ For this workshop we will pratice the analysis on Widnows 10 Pcs so we can downl
 
 <https://vps.fmvz.usp.br/CRAN/bin/windows/base/R-3.6.1-win.exe>
 
-click above link and 
+click above link and save the file to the default download location on your computer. Find the downloaded file, double-click to install R on your computer. During the installation just respond with default options.
 
-<table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em" width="100%">
+<table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em">
 <b>Alternative:</b><br>
 These are some other mirrored web sites that provide this download:<br><br>
 
@@ -69,6 +69,11 @@ For a complete list of all the mirrored sites in different country, visit this l
 </td></tr></table>
 
 
+<table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em">
+Alterntaively you can downlaod another version of R, Microsoft R Open here:
+https://mran.microsoft.com/open
+It's an enhanced version of the original R. The most important feature is that R Open can use the multiple computer CPU cores hence it can speed up many process during the analysis. The R version for Windows can only use a single core hence it can be very slow, especially with a larger (sequence) data set.
+</td></tr></table>  
 
 ### 3. Basic R operations
 
