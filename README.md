@@ -72,7 +72,11 @@ For a complete list of all the mirrored sites in different country, visit this l
 Alterntaively you can downlaod another version of R, Microsoft R Open here:<br>
 <https://mran.microsoft.com/open> <br>
 It's an enhanced version of the original R. The most important feature of R Open is that it can use the multiple computer CPU cores hence it can speed up many process during the analysis. The R version for Windows can only use a single core hence it can be very slow, especially with a larger (sequence) data set.
-</td></tr></table>  
+</td></tr></table> 
+
+After R is installed on your computer, find the shortcut and launch the program. You should choose the "x64" version which is fastser. You will be presented to an R graphical interface:
+![R GUI](https://i.gyazo.com/07ae9074dbbd826b3e741ca3407dbd97.png "R GUI")
+
 
 ### 3. Basic R operations
 
