@@ -7,8 +7,9 @@
 The text in the light-blue box, contains the R codes that you can highlight (by dragging your mouse), copy (use the control-C key combination) and paste (control-V) into your R command-line interface on your computer. For example:
 ``` R
 #Below is a working R code that you can copy and paste into your R to execuate some R commands
-ls()
 message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
+2+2
+3*3
 ```
 
 ### 2. Alternative method box
@@ -97,9 +98,17 @@ There are two types of input in the R command-line interface
 
 
 ```R
-#This is R code box
-ls()
-save.image()
+# BASIC ARITHMETIC OPERATORS
+2-5 # subtraction
+6/3 # division
+3+2*5 # note order of operations exists
+(3+2)*5 # if you need, force operations using
+ # redundant parentheses
+4^3 # raise to a power is ^
+exp(4) # e^4 = 54.598 (give or take)
+log(2.742) # natural log of 2.74
+log10(1000) # common log of 1000
+pi # 3.14159... 
 ```
 
 ### 4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads
