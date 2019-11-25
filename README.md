@@ -182,6 +182,17 @@ BiocManager::install("xlsx")
 
 ```
 
+After installing these packages, we need to load them before we can use it, let's load them all in a single shot:
+
+```R
+library("dada2")
+library("ggpubr")
+library("ggplot2")
+library("phyloseq")
+library("Biostrings")
+library("xlsx")
+```
+
 <br><br>
 
 ### 4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads
@@ -190,7 +201,94 @@ Demo data download:
 1) Demo sequences - click to download
 2) Demo R objects - click to download
 
-Install
+Step 1. Find the sequence data
+
+```R
+dir.create("fastq", showWarnings = F)
+path <- "fastq"
+#list.files(path)
+fnFs <- sort(list.files(path, pattern="_R1.fastq", full.names = TRUE))
+fnRs <- sort(list.files(path, pattern="_R2.fastq", full.names = TRUE))
+sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
+#sample.names 
+
+```
+
+Step 2. Quality plots
+
+```R
+plotQualityProfile(c(fnFs[1],fnRs[1]))
+```
+
+```R
+dir.create("quality_plots", showWarnings = F)
+
+quality_plots=list()
+for (i in 1:length(fnRs)) {
+quality_plots[[i]]=plotQualityProfile(c(fnFs[i],fnRs[i]))
+}
+quality_plots_all=ggarrange(plotlist=quality_plots,ncol=1,nrow=length(fnRs))
+pdf("quality_plots/quality_plots_all.pdf", width=10, height=3*length(fnRs))
+quality_plots_all
+dev.off()
+
+```
+
+Step 3. Filter and trimm sequences
+
+```R
+dir.create("filtered", showWarnings = FALSE)
+filtFs <- file.path("filtered", paste0(sample.names, "_F_filt.fastq.gz"))
+filtRs <- file.path("filtered", paste0(sample.names, "_R_filt.fastq.gz"))
+#reads.filtered.start=Sys.time()
+reads.filtered <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(280,220),maxN=0, maxEE=c(2,2), truncQ=2, rm.phix=TRUE,compress=TRUE, multithread=TRUE)
+#reads.filtered.finished=Sys.time()
+
+```
+
+Step 4. Learn sequence error rates to build error models for denoise purpose
+
+```R
+dir.create("err_plots", showWarnings = FALSE)
+
+#learnErrors.start=Sys.time()
+errF <- learnErrors(filtFs, multithread=TRUE)
+errR <- learnErrors(filtRs, multithread=TRUE)
+#learnErrors.finished=Sys.time()
+
+pdf("err_plots/errF.pdf")
+plotErrors(errF, nominalQ=TRUE)
+dev.off()
+pdf("err_plots/errR.pdf")
+plotErrors(errR, nominalQ=TRUE)
+dev.off()
+
+```
+
+Step 5. De-replicate reads 
+
+```R
+#derepFastq.start=Sys.time()
+derepFs <- derepFastq(filtFs, verbose=TRUE)
+derepRs <- derepFastq(filtRs, verbose=TRUE)
+#derepFastq.finished=Sys.time()
+
+```
+
+Step 6. Denoise sequences based on the error model
+
+```R
+names(derepFs) <- sample.names
+names(derepRs) <- sample.names
+
+dada2.start=Sys.time()
+dadaFs <- dada(derepFs, err=errF, multithread=TRUE)
+dadaRs <- dada(derepRs, err=errR, multithread=TRUE)
+dada2.finished=Sys.time()
+
+```
+
+
 
 ### 5. Use of the R Phyloseq package to study microbial diversity
 
