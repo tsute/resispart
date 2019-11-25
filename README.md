@@ -93,22 +93,32 @@ There are two types of input in the R command-line interface
 2) commands - if a line does not beging iwth a # sign, it is treated as a command and whatever you type in must obey the R language and grammer. If you type something that R doesn't recognize, it will give you an error output.
 3) multipe lines command input - if a line ends with a / (backward slash) sign, it tells the R program that you have done giving out your commands, and will continue your command input in the next line. R will then wait until the last line without the / sign and collect all the lines together and execuate the commands. This is because often time a command has many parameters, or a long parameter (such as a long flie name) and this multi-line command featuer will come in handy.
 
+Now copy and paste the example R code below into your R command line interface:
+``` R
+#Below is a working R code that you can copy and paste into your R to execuate some R commands
+message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
+2+2
+3*3
+```
+
+You should get an output like this:
+<img src="https://gyazo.com/bcbdbca157c0f9e720a2a63a44844a6d.png>
+
 
 #### Using R as a calculator
 
-
 ```R
 # BASIC ARITHMETIC OPERATORS
-2-5 # subtraction
-6/3 # division
-3+2*5 # note order of operations exists
-(3+2)*5 # if you need, force operations using
- # redundant parentheses
-4^3 # raise to a power is ^
-exp(4) # e^4 = 54.598 (give or take)
-log(2.742) # natural log of 2.74
-log10(1000) # common log of 1000
-pi # 3.14159... 
+2-5                # subtraction
+6/3                # division
+3+2*5              # note order of operations exists
+(3+2)*5            # if you need, force operations using
+                   # redundant parentheses
+4^3                # raise to a power is ^
+exp(4)             # e^4 = 54.598 (give or take)
+log(2.742)         # natural log of 2.74
+log10(1000)        # common log of 1000
+pi                 # 3.14159... 
 ```
 
 ### 4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads
