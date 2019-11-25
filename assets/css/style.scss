@@ -6,13 +6,13 @@ $border-color:#AAAAAA;
 $section-headings-color:#333333;
 @import "{{ site.theme }}";
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #333333;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .page-header {
