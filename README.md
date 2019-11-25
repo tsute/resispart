@@ -275,22 +275,74 @@ derepRs <- derepFastq(filtRs, verbose=TRUE)
 
 ```
 
-Step 6. Denoise sequences based on the error model
+Step 6. Denoise sequences based on the error model to product amplicon sequence variants (ASVs)
 
 ```R
 names(derepFs) <- sample.names
 names(derepRs) <- sample.names
 
-dada2.start=Sys.time()
+#dada2.start=Sys.time()
 dadaFs <- dada(derepFs, err=errF, multithread=TRUE)
 dadaRs <- dada(derepRs, err=errR, multithread=TRUE)
-dada2.finished=Sys.time()
+#dada2.finished=Sys.time()
+
+```
+
+Step 7. Merge the pair-end reads to single reads
+
+```R
+mergers <- mergePairs(dadaFs, derepFs, dadaRs, derepRs, verbose=TRUE)
+seqtab <- makeSequenceTable(mergers)
+write.table(t(seqtab),file="seqtab.txt",sep="\t",quote=FALSE)
+```
+
+Step 8. Identify chimera and remove them
+
+```R
+#bimera.start=Sys.time()
+seqtab.nochim <- removeBimeraDenovo(seqtab, method="consensus", multithread=TRUE, verbose=TRUE)
+#bimera.finished=Sys.time()
+write.table(t(seqtab.nochim),file="seqtab.nochim",sep="\t",quote=FALSE)
+
+```
+
+Step 9. Make a summary table for the above processes
+
+```R
+library(xlsx)
+getN <- function(x) sum(getUniques(x))
+track <- cbind(reads.filtered, sapply(dadaFs, getN), sapply(dadaRs, getN), sapply(mergers, getN), rowSums(seqtab.nochim))
+colnames(track) <- c("input", "filtered", "denoisedF", "denoisedR", "merged", "nonchim")
+rownames(track) <- sample.names
+track=rbind(track,colSums(track))
+rownames(track)[nrow(track)]="Row Sum"
+track=rbind(track,(track[nrow(track),]/track[nrow(track)])*100)
+rownames(track)[nrow(track)]="Percentage"
+write.xlsx(t(track),file="dada2_summary.xlsx",sheetName="dada2 summary")
+
+```
+
+Step 10. Assign ASVs with taxonomy
+
+```R
+#taxa.start=Sys.time()
+taxa=assignTaxonomy(seqtab.nochim, "taxonomy/MOMDHOMDEXTGGNCBI_7S.fa.gz",tryRC=TRUE)
+#taxa.finished=Sys.time()
+
+taxa.print <- taxa
+rownames(taxa.print) <- NULL
+taxa.print
+head(taxa.print)
 
 ```
 
 
 
+
 ### 5. Use of the R Phyloseq package to study microbial diversity
+
+Under construction ...
+
 
 ### 6. Use of the MicrobiomeAnalyst online tools for statistical, visual and meta-analysis of microbiome data
 
@@ -298,9 +350,4 @@ Link to Achal's MicrobiomeAnalyst tutorial <font color="red">(Achal, please writ
 
 ### 7. Beyond microbiome sequence data – Meta-genomic and Meta-transcriptomic data
 
-
-```R
-#This is R code box
-ls()
-save.image()
-```
+Under contruction ...
