@@ -75,7 +75,7 @@ It's an enhanced version of the original R. The most important feature of R Open
 </td></tr></table> 
 
 After R is installed on your computer, find the shortcut and launch the program. You should choose the "x64" version which is fastser. You will be presented to an R graphical interface:
-![R GUI](https://i.gyazo.com/07ae9074dbbd826b3e741ca3407dbd97.png "R GUI")
+<img src="https://i.gyazo.com/07ae9074dbbd826b3e741ca3407dbd97.png">
 
 
 ### 3. Basic R operations
