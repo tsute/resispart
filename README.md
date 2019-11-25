@@ -346,7 +346,7 @@ Under construction ...
 
 ### 6. Use of the MicrobiomeAnalyst online tools for statistical, visual and meta-analysis of microbiome data
 
-Link to Achal's MicrobiomeAnalyst tutorial <font color="red">(Achal, please write your own tutorial, or if you alreay have one, please give me the link so I can embeded the link here)</font>
+Link to Achal's MicrobiomeAnalyst tutorial <font color="red">(Achal, please write your own tutorial, or if you alreay have one, please give me the link so I can embed the link to your tutorial here)</font>
 
 ### 7. Beyond microbiome sequence data – Meta-genomic and Meta-transcriptomic data
 
