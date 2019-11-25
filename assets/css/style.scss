@@ -11,13 +11,17 @@ body {
   color: #333333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+.I {
+  font-weight:bold;
+  color: black;
 }
-section {
-  h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  }
+.II1{
+  font-weight:bold;
+  color: navy;
+}
+.II2{
+  font-weight:bold;
+  color: brown;
 }
 
 .page-header {
