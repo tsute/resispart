@@ -42,6 +42,21 @@ In this workshop we will learn how to use several commonly used software tools t
 
 ### 2. Installation of the R software and packages for analyzing microbiome sequence data
 
+R is short for "The R Project for Statistical Computing" and is a free software environment for statistical analysis and data visualization. R has been a very popular software development platform for many bioinformatics toosl, including those that are useful for analyziging NGS sequenes reads, as well as the microbiome diversity analysis. 
+
+In this workshop we will use several sotftware packges developed on the R platform. Henct the first thing is to download and install R on your computer.
+
+For this workshop we will pratice the analysis on Widnows 10 Pcs so we can download the latest R for Windows computers from these mirrored web site:
+
+Brazil
+https://nbcgib.uesc.br/mirrors/cran/	Computational Biology Center at Universidade Estadual de Santa Cruz
+https://cran-r.c3sl.ufpr.br/	Universidade Federal do Parana
+https://cran.fiocruz.br/	Oswaldo Cruz Foundation, Rio de Janeiro
+https://vps.fmvz.usp.br/CRAN/	University of Sao Paulo, Sao Paulo
+https://brieger.esalq.usp.br/CRAN/	University of Sao Paulo, Piracicaba
+
+
+
 ### 3. Basic R operations
 
 ```R
