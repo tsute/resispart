@@ -1,9 +1,9 @@
 <div align="center">Tsute Chen (George)<br>
   <i>The Forsyth Institute, Cambridge, MA, USA</i></div>
 
-<h2> Part I. Introduction - how to use this workshop tutorial</h2>
+<h2 style="font-weight:bold"> Part I. Introduction - how to use this workshop tutorial</h2>
 
-<h3>1. R Code Box</h3>
+<h3  style="font-weight:bold">1. R Code Box</h3>
 
 The text in the light-blue box, contains the R codes that you can highlight (by dragging your mouse), copy (use the control-C key combination) and paste (control-V) into your R command-line interface on your computer. For example:
 
