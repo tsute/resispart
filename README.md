@@ -85,6 +85,17 @@ Next we'll get our hands wet by testing out the R in Windows.
 
 ### 3. Basic R operations
 
+#### The R command-line interface
+
+There are two types of input in the R command-line interface 
+1) comments - any line that start with a # sign, is treated as comment and the R program will ingore the entire line.
+2) commands - if a line does not beging iwth a # sign, it is treated as a command and whatever you type in must obey the R language and grammer. If you type something that R doesn't recognize, it will give you an error output.
+3) multipe lines command input - if a line ends with a / (backward slash) sign, it tells the R program that you have done giving out your commands, and will continue your command input in the next line. R will then wait until the last line without the / sign and collect all the lines together and execuate the commands. This is because often time a command has many parameters, or a long parameter (such as a long flie name) and this multi-line command featuer will come in handy.
+
+
+#### Using R as a calculator
+
+
 ```R
 #This is R code box
 ls()
