@@ -17,13 +17,13 @@ h1,h2,h3,h4,h5,h6 {
 
 .page-header {
   @include large {
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
   }
   @include medium {
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
   }
   @include small {
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
   }
 }
 .project-tagline {
