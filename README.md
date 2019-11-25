@@ -55,15 +55,13 @@ https://vps.fmvz.usp.br/CRAN/bin/windows/base/R-3.6.1-win.exe
 <table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em" width="100%">
 <b>Alternative:</b><br>
 These are some other mirrored web sites that provide this download:<br><br>
-  
-<pre>
-Brazil
-https://nbcgib.uesc.br/mirrors/cran/	Computational Biology Center at Universidade Estadual de Santa Cruz
-https://cran-r.c3sl.ufpr.br/	Universidade Federal do Parana
-https://cran.fiocruz.br/	Oswaldo Cruz Foundation, Rio de Janeiro
-https://vps.fmvz.usp.br/CRAN/	University of Sao Paulo, Sao Paulo
-https://brieger.esalq.usp.br/CRAN/	University of Sao Paulo, Piracicaba
-</pre>
+
+Brazil<br>
+https://nbcgib.uesc.br/mirrors/cran/	Computational Biology Center at Universidade Estadual de Santa Cruz<br>
+https://cran-r.c3sl.ufpr.br/	Universidade Federal do Parana<br>
+https://cran.fiocruz.br/	Oswaldo Cruz Foundation, Rio de Janeiro<br>
+https://vps.fmvz.usp.br/CRAN/	University of Sao Paulo, Sao Paulo<br>
+https://brieger.esalq.usp.br/CRAN/	University of Sao Paulo, Piracicaba<br>
 <br><br>
 For a complete list of all the mirrored sites in different country, visit this link:<br>
 https://cran.r-project.org/mirrors.html
