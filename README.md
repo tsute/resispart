@@ -444,6 +444,7 @@ write.table(rownames_to_column(as.data.frame(tax_table(ps)),'#TAXONOMY'),file="t
 
 ```
 
+
 <h3 style="font-weight:bold;color:brown"> 6. Use of the MicrobiomeAnalyst online tools for statistical, visual and meta-analysis of microbiome data</h3>
 
 Link to Achal's MicrobiomeAnalyst tutorial <font color="red">(Achal, please write your own tutorial, or if you alreay have one, please give me the link so I can embed the link to your tutorial here)</font>
