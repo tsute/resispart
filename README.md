@@ -1,7 +1,9 @@
 <h2>Table of Content</h2>
 
 [Instruction: How to use this workshop tutorial](part1)
+
 [Workshop Tutorial](part2)
+
 * [1. Introduction](part2/#1)
 * [2. Installation of the R software and packages for analyzing microbiome sequence data](part2/#2)
 * [3. Basic R operations](part2/#3)
