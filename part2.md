@@ -2,8 +2,7 @@
 permalink: /part2/
 ---
 <h2  style="font-weight:bold;color:navy">Workshop Tutorial</h2>
-
-<br><br>
+<br>
 <a name="A1">
 <h3 style="font-weight:bold;color:navy"> 1. Introduction</h3>
 
