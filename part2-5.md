@@ -105,4 +105,4 @@ write.table(rownames_to_column(as.data.frame(tax_table(ps)),'#TAXONOMY'),file="t
 
 ```
 
-
+## [Next ▶](/resispart/part6-7)
