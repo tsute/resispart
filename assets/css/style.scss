@@ -1,6 +1,5 @@
 ---
 ---
-$alt-bg-color:#FFDFBF;
 $code-bg-color:#BFFFBF;
 $code-text-color:#333333;
 $border-color:#AAAAAA;
@@ -12,6 +11,9 @@ body {
   color: #333333;
 }
 
+.altbg {
+  color:#FFDFBF;
+}
 .I {
   font-weight:bold;
   color: black;
