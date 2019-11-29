@@ -30,5 +30,5 @@ This is where other ways of doing the same thing will be described
   <b>Note:</b> A note is something that needs to be mentioned but is apart from the context.
 </td></tr></table>
 
-## [Next ▶](/part2)
+## [Next ▶](/resispart/part2)
 
