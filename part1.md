@@ -1,6 +1,6 @@
 layout: page
 title: "Part I Introduction"
-permalink: /part1
+permalink: /part1/
 
 
 <h2 style="font-weight:bold"> Part I. Introduction - how to use this workshop tutorial</h2>
