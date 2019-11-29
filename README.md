@@ -207,7 +207,7 @@ getwd()
 ```
 You should see something like this:
 
-<img src="https://i.gyazo.com/3ccc6b2e87b3955d26d4908b9ccf06d1.png">
+<img src="https://gyazo.com/b7474148496ee1058742822a21508595.png">
 
 Next, do this to download and extract a set of demo files:
 
