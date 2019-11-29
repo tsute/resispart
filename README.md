@@ -166,7 +166,7 @@ The data (of different types) can be combined to form data structures
 
 <h4 style="font-weight:bold;color:navy"> Beyound basic R - install R packages </h4>
 
-Copy and paste the below R package installation codes to install the packaged required by this workshop:
+Copy and paste the below R package installation codes to install the packages that we will be using in this workshop:
 
 ```R
 if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -195,15 +195,38 @@ library("xlsx")
 
 <h3 style="font-weight:bold;color:#008C23"> 4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads</h3>
 
-<h4 style="font-weight:bold;color:#008C23"> Step 1. First we need to download a set of demo Illumina 16S rRNA sequences</h4>
+<h4 style="font-weight:bold;color:#008C23"> Step 1. First we need to create a working directory and  download a set of demo Illumina 16S rRNA sequences</h4>
 
-<ftp://www.homd.org/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip>
+```R
+#create a directory to work in, so everything is contained in this folder
+dir.create("resispart")
+#set the working directory to resispart
+setwd("resispart")
+#double check the currrent working directory is resispart
+getwd()
+```
+You should see something like this:
 
-If the above link doesn't work use this alternative link:
+<img src="https://i.gyazo.com/3ccc6b2e87b3955d26d4908b9ccf06d1.png">
 
-<http://www.homd.org/ftp/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip>
+Next, do this to download and extract a set of demo files:
 
+```R
+#download from an FTP site
+download.file("ftp://www.homd.org/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip","temp.zip")
+## then unzip it, exdir tells R to just extract to the current working directory "."
+unzip("temp.zip",exdir=".")
+#list the content of the unzipped files
+list.files()
+```
 The file size is 1.1Gb so it may take some time to download, depending on the Internet connection speed.
+<img src="https://i.gyazo.com/e6e4ebd1a04be63bd6cf1cdd3b222297.png">
+
+<table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em" width="100%">
+If the above link doesn't work use this alternative link:<br>
+http://www.homd.org/ftp/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip<br>
+  </td></tr></table>
+
 
 <h4 style="font-weight:bold;color:#008C23"> Step 2. Find the sequence data</h4>
 
