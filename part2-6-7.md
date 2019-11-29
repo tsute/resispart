@@ -19,3 +19,6 @@ In case the site is not avaialble, Achal provided the R codes for the Microbiome
 <h3 style="font-weight:bold;color:purple"> 7. Beyond microbiome sequence data – Meta-genomic and Meta-transcriptomic data</h3>
 
 Under contruction ...
+
+
+## [Back ▶](/resispart)
