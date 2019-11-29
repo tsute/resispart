@@ -158,4 +158,4 @@ library("Biostrings")
 library("xlsx")
 ```
 
-## [Next ▶](/part2-4)
+## [Next ▶](/resispart/part2-4)
