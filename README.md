@@ -37,24 +37,6 @@
 
 
 
-<h4 style="font-weight:bold;color:brown"> Step 6. Identify differentially represented species</h4>
-
-```R
-#### Under construction
-
-```
-
-<h4 style="font-weight:bold;color:brown"> Step 7. Export tables for more downstream analysis using MicrobiomAnalyst</h4>
-
-```R
-library(tibble)
-write.table(rownames_to_column(as.data.frame(t(otu_table(ps))),'#NAME'),file="otu_table.txt",sep="\t",quote=FALSE,row.names=F)
-write.table(rownames_to_column(as.data.frame(meta),'#NAME'),file="meta_table.txt",sep="\t",quote=FALSE,row.names=F)
-write.table(rownames_to_column(as.data.frame(tax_table(ps)),'#TAXONOMY'),file="tax_table.txt",sep="\t",quote=FALSE,row.names=F)
-
-```
-
-
 <h3 style="font-weight:bold;color:brown"> 6. Use of the MicrobiomeAnalyst online tools for statistical, visual and meta-analysis of microbiome data</h3>
 
 Achal Dhariwal will lead this section to perform downstream analyses using the online tool MicrobiomeAnalyst that he and his colleages at McGill University developed. 
