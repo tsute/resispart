@@ -1,5 +1,6 @@
-<div align="center">Tsute Chen (George)<br>
-  <i>The Forsyth Institute, Cambridge, MA, USA</i></div>
+<h1>Table of Content</h1>
+* [Part I Introduction](part1)
+* [Part II](part2)
 
 <h2 style="font-weight:bold"> Part I. Introduction - how to use this workshop tutorial</h2>
 
