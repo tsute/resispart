@@ -1,5 +1,5 @@
 ---
-permalink=/part2-4/
+permalink: /part2/
 ---
 <h3 style="font-weight:bold;color:#008C23"> 4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads</h3>
 <a name="A1">
