@@ -1,6 +1,8 @@
+---
 layout: page
-title: "Part I. Introduction"
+title: "Part I Introduction"
 permalink: /part1/
+---
 <h2 style="font-weight:bold"> Part I. Introduction - how to use this workshop tutorial</h2>
 
 <h3 style="font-weight:bold">1. R Code Box</h3>
