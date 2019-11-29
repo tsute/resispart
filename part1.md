@@ -26,13 +26,14 @@ Text inside the alternative method box, shows another or more different ways of 
 
 <table class="altbg"><tr><td style="font-size:0.8em" width="100%">
 <b>Alternative:</b><br>
-This is where other ways of doing the same thing will be described
+This is where other ways of doing the same thing will be described<br>
+  
 </td></tr></table>
 
 <h3 style="font-weight:bold"> 3. Notes and comments </h3>
 
 <table  class="notebg"><tr><td style="font-size:0.8em;font-style:italic;">
-  <b>Note:</b> A note is something that needs to be mentioned but is apart from the context.
+  <b>Note:</b> A note is something that needs to be mentioned but is apart from the context.<br>
 </td></tr></table>
 
 ## [Next ▶](/resispart/part2)
