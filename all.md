@@ -1,6 +1,8 @@
+---
 layout: page
 title: "all parts"
 permalink: /all/
+---
 <div align="center">Tsute Chen (George)<br>
   <i>The Forsyth Institute, Cambridge, MA, USA</i></div>
 
