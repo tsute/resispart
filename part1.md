@@ -13,7 +13,12 @@ The text in the light-blue box, contains the R codes that you can highlight (by 
 message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 2+2
 3*3
+
 ```
+
+You will see an output like this:
+
+<img src="https://gyazo.com/662fc610fe1f012a398e717d23543bca.png">
 
 <h3 style="font-weight:bold"> 2. Alternative method box </h3>
 
