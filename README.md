@@ -1,8 +1,8 @@
 <h2>Table of Content</h2>
 * [Part I Introduction](part1)
 * [Part II Workshop Tutorial](part2)
- * [1. Introduction](part2/#1)
- * [2. Installation of the R software and packages for analyzing microbiome sequence data](part2/#2)
+   * [1. Introduction](part2/#1)
+   * [2. Installation of the R software and packages for analyzing microbiome sequence data](part2/#2)
  * [3. Basic R operations](part2/#3)
  * [4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads](part2/#4)
  * [3. Basic R operations](part2/#3)
