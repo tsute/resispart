@@ -85,3 +85,24 @@ ps.top10.species <- prune_taxa(top10.species,ps.species)
 plot_bar(ps.top10.species,x="Concentration",fill="Species")
 
 ```
+
+<a name="A6">
+<h4 style="font-weight:bold;color:brown"> Step 6. Identify differentially represented species</h4>
+
+```R
+#### Under construction
+
+```
+
+<a name="A7">
+<h4 style="font-weight:bold;color:brown"> Step 7. Export tables for more downstream analysis using MicrobiomAnalyst</h4>
+
+```R
+library(tibble)
+write.table(rownames_to_column(as.data.frame(t(otu_table(ps))),'#NAME'),file="otu_table.txt",sep="\t",quote=FALSE,row.names=F)
+write.table(rownames_to_column(as.data.frame(meta),'#NAME'),file="meta_table.txt",sep="\t",quote=FALSE,row.names=F)
+write.table(rownames_to_column(as.data.frame(tax_table(ps)),'#TAXONOMY'),file="tax_table.txt",sep="\t",quote=FALSE,row.names=F)
+
+```
+
+
