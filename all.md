@@ -1,6 +1,4 @@
 ---
-layout: page
-title: "all parts"
 permalink: /all/
 ---
 <div align="center">Tsute Chen (George)<br>
