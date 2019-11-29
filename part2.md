@@ -1,3 +1,6 @@
+---
+permalink: /part2/
+---
 <h2  style="font-weight:bold;color:navy">Workshop Tutorial</h2>
 
 <br><br>
