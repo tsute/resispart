@@ -6,7 +6,7 @@
 
 * [1. Introduction](part2/#A1)
 * [2. Installation of the R software and packages for analyzing microbiome sequence data](part2/#A2)
-* [3. Basic R operations](part2/A3)
+* [3. Basic R operations](part2/#A3)
 * [4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads](part2-4)
 	* [Step 1. Create a working directory and download a set of demo Illumina 16S rRNA sequences](part2-4/#A1)
 	* [Step 2. Find the sequence data](part2-4/#A2)
