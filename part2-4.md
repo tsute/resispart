@@ -74,12 +74,22 @@ dev.off()
 
 ```
 
-This will generate a long PDF file with quality plots for all 12 samples.
+You will see some warnings but we can safely ignore them:
 
+<img src="https://i.gyazo.com/4a8a27806fec46380ec3cca81f6014f6.png">
 
+This will generate a long PDF file with quality plots for all 12 samples. Go to windows desktop folder "resispart" and the PDF plot is called "quality_plots_all.pdf" in the "quality_plots" folder.
+
+Open the pdf file you will see 12 pairs of quality plots in one pdf file:
+
+<img src="https://gyazo.com/8a563c82c605253f3b131aa95fd616ab.png">
+
+The purpose of examine these quality plots is to help us pick a trimming length for both reads. Usually the sequence quality degrades more rapidly toward the end of the read, this is especially so for R2.
 
 <a name="A4">
 <h4 style="font-weight:bold;color:#008C23"> Step 4. Filter and trimm sequences</h4>
+
+Based on the above sequence plots, we observe that quality score starts to drop rapidly after base 280 for R1 and 220 for R2 so next we will trim the bases off the reads after these two positions:
 
 ```R
 dir.create("filtered", showWarnings = FALSE)
@@ -90,6 +100,7 @@ reads.filtered <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(280,220),
 #reads.filtered.finished=Sys.time()
 
 ```
+This may take a while depending on your computer's speed. If it is taking too long, we can cancel the "filterAndTrim" command by pressing the Escape key and then the Enter to to cancel the filtering process. We will used a pre-filtered result in the "filtered_backup" folder. Go to Windows explorer and rename this folder to just "filtered" so we can continue to the next step. 
 
 <a name="A5">
 <h4 style="font-weight:bold;color:#008C23"> Step 5. Learn sequence error rates to build error models for denoise purpose</h4>
