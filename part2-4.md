@@ -51,10 +51,14 @@ sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
 <a name="A3">
 <h4 style="font-weight:bold;color:#008C23"> Step 3. Quality plots</h4>
 
+Make a plot for the read pairs (R1 and R2) of the first sample:
 ```R
 plotQualityProfile(c(fnFs[1],fnRs[1]))
 ```
+Quality plot output:
+<img src="https://i.gyazo.com/f78c3b831e38438c7f7b6b1ffb4ebdd0.png">
 
+Now we make a loop to plot all the read pairs in a single shot:
 ```R
 dir.create("quality_plots", showWarnings = F)
 
@@ -68,6 +72,10 @@ quality_plots_all
 dev.off()
 
 ```
+
+This will generate a long PDF file with quality plots for all 12 samples.
+
+
 
 <a name="A4">
 <h4 style="font-weight:bold;color:#008C23"> Step 4. Filter and trimm sequences</h4>
