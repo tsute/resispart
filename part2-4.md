@@ -202,10 +202,13 @@ seqtab <- makeSequenceTable(mergers)
 write.table(t(seqtab),file="seqtab.txt",sep="\t",quote=FALSE)
 ```
 
+<img src="https://gyazo.com/fd3ccb0ec292173bac2d8b50eb104130.png">
 
 
 <a name="A9">
 <h4 style="font-weight:bold;color:#008C23"> Step 9. Identify chimera and remove them</h4>
+
+The PCR step prior to the sequencing often generates chimera - a hybrid artifial sequences dervied from two different parent sequeces. The ASVs may still have these hybrid sequences and should be removed. Chimeric sequences are identified if they can be exactly reconstructed by combining a left-segment and a right-segment from two more abundant “parent” sequences. It is easier and more accurate to identify chimera from the denoised ASVs than the noisy raw sequences.
 
 ```R
 #bimera.start=Sys.time()
@@ -217,6 +220,8 @@ write.table(t(seqtab.nochim),file="seqtab.nochim",sep="\t",quote=FALSE)
 
 <a name="A10">
 <h4 style="font-weight:bold;color:#008C23"> Step 10. Make a summary table for the above processes</h4>
+  
+Use the following R codes to generate a summary of all the processes and keep track of number and percentage of reads after each step.
 
 ```R
 library(xlsx)
@@ -231,6 +236,9 @@ rownames(track)[nrow(track)]="Percentage"
 write.xlsx(t(track),file="dada2_summary.xlsx",sheetName="dada2 summary")
 
 ```
+
+<img src+"https://i.gyazo.com/c5ad59bbc9aa68b739dc7ea64cd0e908.png">
+
 
 <a name="A11">
 <h4 style="font-weight:bold;color:#008C23"> Step 11. Assign ASVs with taxonomy</h4>
