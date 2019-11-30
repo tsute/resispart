@@ -18,7 +18,7 @@ message("Hello! Welcome to the RESISTPART Bioinformatics Workshop")
 
 You will see an output like this:
 
-<img src="https://gyazo.com/662fc610fe1f012a398e717d23543bca.png">
+<img src="https://i.gyazo.com/6bd1f3ce431efe865bf4e8209d2ead5a.png">
 
 <h3 style="font-weight:bold"> 2. Alternative method box </h3>
 
