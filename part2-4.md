@@ -151,9 +151,6 @@ Dereplication is to remove the redundant/repeated sequences from a set of sequen
 1. Reduce computaton time by emiminating repeated sequences.
 2. The abudnace (copy number) infomration will be used in the partitioning step to form amplicon sequence variants.
 
-If a sequence is real and abundant, there should be many identical copies of the same sequences.  Dereplication combines all identical sequencing reads into into “unique sequences” with a corresponding “abundance” equal to the number of reads with that unique sequence. Dereplication substantially reduces computation time by eliminating redundant comparisons.
-Dereplication in the DADA2 pipeline has one crucial addition from other pipelines: DADA2 retains a summary of the quality information associated with each unique sequence. The consensus quality profile of a unique sequence is the average of the positional qualities from the dereplicated reads. These quality profiles inform the error model of the subsequent sample inference step, significantly increasing DADA2’s accuracy.
-
 Perform the following commands to dereplicate the reads:
 
 ```R
@@ -173,6 +170,10 @@ The result should be self-explanatory:
 <a name="A7">
 <h4 style="font-weight:bold;color:#008C23"> Step 7. Denoise sequences based on the error model to product amplicon sequence variants (ASVs)</h4>
 
+This step is the central part of the DADA2 pipeline. In a very simplified version of explanation, DADA2 uses a consensus quality profile with the abundance information to partition the reads into amplicaon sequence variants (ASVs). In a sample, if a sequence is real and abundant, there should be many identical copies of the same sequences. The more copies of the same sequences, the more likely it is to be true sequences. DADA2 partition the reads based on most abundant unique reads, and then forms ASVs using the consensus quality information associated with the reads. 
+
+Copy and paste the following R codes to perform the denoising step
+
 ```R
 names(derepFs) <- sample.names
 names(derepRs) <- sample.names
@@ -184,14 +185,24 @@ dadaRs <- dada(derepRs, err=errR, multithread=TRUE)
 
 ```
 
+<img src="https://i.gyazo.com/8302531cf335be4cdb4f5a303cc891b8.png">
+
+
+
 <a name="A8">
 <h4 style="font-weight:bold;color:#008C23"> Step 8. Merge the pair-end reads to single reads</h4>
+  
+Next we merge the forward (R1) and reverse (R2) reads together to generate the full denoised sequences. This is done by aligning the denoised R1 reads with the reverse-complement of the corresponding R2 reads. 
+
+Perform the following command to merge the pair-end reads, and generate a liste of the merged ASV sequences.
 
 ```R
 mergers <- mergePairs(dadaFs, derepFs, dadaRs, derepRs, verbose=TRUE)
 seqtab <- makeSequenceTable(mergers)
 write.table(t(seqtab),file="seqtab.txt",sep="\t",quote=FALSE)
 ```
+
+
 
 <a name="A9">
 <h4 style="font-weight:bold;color:#008C23"> Step 9. Identify chimera and remove them</h4>
