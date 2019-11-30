@@ -39,7 +39,6 @@ http://www.homd.org/ftp/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zi
 <h4 style="font-weight:bold;color:#008C23"> Step 2. Find the sequence data</h4>
 
 ```R
-dir.create("fastq", showWarnings = F)
 path <- "fastq"
 #list.files(path)
 fnFs <- sort(list.files(path, pattern="_R1.fastq", full.names = TRUE))
