@@ -255,10 +255,26 @@ The K-mer based non-alignment method, on the other hand does not consider the po
 
 In this tutorial we will use the non-alignment taxonomy assignment method provided by the DADA2 package. This default k-mer based assignment is based on the naive Bayesian classifier method developed by the Ribosomal Database Project (RDP) ([Wang et al, 2007](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1950982/). The fucntion is called "assignTaxonomy". 
 
-The assignment will need a set of 16S rRNA gene reference sequences that is well curated with taxonomy information. There are several choices of the reference sequences. 
+The assignment will need a set of 16S rRNA gene reference sequences that is well curated with taxonomy information. There are several choices of the reference sequences. The [DATA2 web site](https://benjjneb.github.io/dada2/training.html) provides several choices:
 
+1. Silva version 132, Silva version 128, Silva version 123 (Silva dual-license)
+2. RDP trainset 16, RDP trainset 14
+3. GreenGenes version 13.8
+4. UNITE (use the General Fasta releases)
 
+For this tutorial we will be using a set of reference sequences maintained by the HOMD project, this set of reference sequences includes:
 
+1. HMT RefSeq V15.1: 998sequences
+2. HOMD RefSeq Extended V1.11: 151 sequences
+3. GreenGeneGold V1: 2,623 sequences
+4. NCBI 16S rRNA Reference: 18,044sequences
+5. Mouse RefSeq V0.1: 82 sequences
+
+All togethere there are 21,898 unique sequences representing a total of 14,651 prokarotic species. In addition the Genus names were added to the species level name so when the comparison is done at species level, the result will show the full scientific names for the species (i.e., Genus + Species).
+
+This set of reference seuqences is included in the demo dataset in the taxonomy folder. 
+
+Copy and paste below R codes to perform the taxonomy assignement task:
 
 ```R
 #taxa.start=Sys.time()
@@ -271,5 +287,7 @@ taxa.print
 head(taxa.print)
 
 ```
+
+Once all the ASVs are all assgned with the potential taxonomy we are ready for many possible diversity analyses.
 
 ## [Next ▶](/resispart/part2-5)
