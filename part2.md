@@ -121,6 +121,44 @@ R has 5 different data types:
 4) logical (true or false)
 5) complex
 
+```R
+#### character data type
+x="abcdefg"
+x
+sentence="This is a sentence"
+sentence
+
+#### numerica data type
+x=123
+class(x)
+x=1.234
+class(x)
+y=3
+class(y)
+
+### integer
+y=3L
+class(y)
+y=as.integer(3)
+class(y)
+
+#### logical
+x= 1 > 2        # x has the logical value FALSE
+x= 3 < 4        # y has the logical value TRUE
+x= 1 & 1        # x is TRUE
+x= 1 & 0        # x is False
+x= TRUE | FALSE # x is TRUE
+y= !x           # y is FALSE, ! is negate operator
+
+#### complex
+#A complex value in R is defined via the pure imaginary value i. 
+z = 1 + 2i     # create a complex number 
+z              # print the value of z 
+class(z)        # print the class name of z 
+
+
+```
+
 
 <h4 style="font-weight:bold;color:navy"> R data structures </h4>
 
