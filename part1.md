@@ -6,7 +6,7 @@ permalink: /part1/
 
 <h3 style="font-weight:bold">1. R Code Box</h3>
 
-The text in the light-blue box, contains the R codes that you can highlight (by dragging your mouse), copy (use the control-C key combination) and paste (control-V) into your R command-line interface on your computer. For example:
+The text in the light-pink box, contains the R codes that you can highlight (by dragging your mouse), copy (use the control-C key combination) and paste (control-V) into your R command-line interface on your computer. For example:
 
 ``` R
 #Below is a working R code that you can copy and paste into your R to execuate some R commands
