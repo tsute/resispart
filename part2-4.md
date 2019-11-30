@@ -146,6 +146,15 @@ This step is computationally intensive, we used the default setting for the lear
 
 <a name="A6">
 <h4 style="font-weight:bold;color:#008C23"> Step 6. De-replicate reads</h4>
+  
+Dereplication is to remove the redundant/repeated sequences from a set of sequences and keep only one copy of all the unique seuqences. Dereplication serves two purposes:
+1. Reduce computaton time by emiminating repeated sequences.
+2. The abudnace (copy number) infomration will be used in the partitioning step to form amplicon sequence variants.
+
+If a sequence is real and abundant, there should be many identical copies of the same sequences.  Dereplication combines all identical sequencing reads into into “unique sequences” with a corresponding “abundance” equal to the number of reads with that unique sequence. Dereplication substantially reduces computation time by eliminating redundant comparisons.
+Dereplication in the DADA2 pipeline has one crucial addition from other pipelines: DADA2 retains a summary of the quality information associated with each unique sequence. The consensus quality profile of a unique sequence is the average of the positional qualities from the dereplicated reads. These quality profiles inform the error model of the subsequent sample inference step, significantly increasing DADA2’s accuracy.
+
+Perform the following commands to dereplicate the reads:
 
 ```R
 #derepFastq.start=Sys.time()
@@ -154,6 +163,12 @@ derepRs <- derepFastq(filtRs, verbose=TRUE)
 #derepFastq.finished=Sys.time()
 
 ```
+
+The result should be self-explanatory:
+
+<img src="https://i.gyazo.com/b167b45e3120d746be22b5f750decb97.png">)
+
+
 
 <a name="A7">
 <h4 style="font-weight:bold;color:#008C23"> Step 7. Denoise sequences based on the error model to product amplicon sequence variants (ASVs)</h4>
