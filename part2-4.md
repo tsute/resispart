@@ -119,14 +119,30 @@ errF <- learnErrors(filtFs, multithread=TRUE)
 errR <- learnErrors(filtRs, multithread=TRUE)
 #learnErrors.finished=Sys.time()
 
+plotErrors(errF, nominalQ=TRUE)
+
 pdf("err_plots/errF.pdf")
 plotErrors(errF, nominalQ=TRUE)
 dev.off()
+
+plotErrors(errR, nominalQ=TRUE)
+
 pdf("err_plots/errR.pdf")
 plotErrors(errR, nominalQ=TRUE)
 dev.off()
 
 ```
+
+The plots look like this:
+
+<img src="https://i.gyazo.com/10a7c328b4a1568f67aa58f52e165740.png">
+
+There are a total of 12 possible nucleotide transition (e.g., A→C, A→G, …). The plot shows the pair-wise transition of A, T, C and G (including self). The dots indicate the observed error rates for each consensus quality score. The black lines are the estimated error rates after convergence of the machine-learning algorithm. The red lines are the error rates expected under the nominal definition of the Q-score. Ideally we want to see a good fit between the black dots and the black line. As you can see the higher the quality scores the lower the error frequencies. 
+
+<table class="altbg"><tr><td style="font-size:0.8em" width="100%">
+This step is computationally intensive, we used the default setting for the learnErrors function and used only first 100M bases to learn error model. If you don't see a roughly good fit between dots and the lines, you can try increasing the "nbases" parameter to see if the fit improves.
+</td></tr></table>
+
 
 <a name="A6">
 <h4 style="font-weight:bold;color:#008C23"> Step 6. De-replicate reads</h4>
