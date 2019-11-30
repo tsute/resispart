@@ -56,6 +56,7 @@ Make a plot for the read pairs (R1 and R2) of the first sample:
 plotQualityProfile(c(fnFs[1],fnRs[1]))
 ```
 Quality plot output:
+
 <img src="https://i.gyazo.com/f78c3b831e38438c7f7b6b1ffb4ebdd0.png">
 
 Now we make a loop to plot all the read pairs in a single shot:
