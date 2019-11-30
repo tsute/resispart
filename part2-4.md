@@ -82,9 +82,9 @@ This will generate a long PDF file with quality plots for all 12 samples. Go to 
 
 Open the pdf file you will see 12 pairs of quality plots in one pdf file:
 
-<img src="https://gyazo.com/8a563c82c605253f3b131aa95fd616ab.png">
+<img src="https://gyazo.com/8a563c82c605253f3b131aa95fd616ab.png" border="2">
 
-The purpose of examine these quality plots is to help us pick a trimming length for both reads. Usually the sequence quality degrades more rapidly toward the end of the read, this is especially so for R2.
+The purpose of examining these quality plots is to help us pick a trimming length for the reads. Usually the sequence quality degrades more rapidly toward the end of the read, this is especially so for R2.
 
 <a name="A4">
 <h4 style="font-weight:bold;color:#008C23"> Step 4. Filter and trimm sequences</h4>
@@ -100,10 +100,16 @@ reads.filtered <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(280,220),
 #reads.filtered.finished=Sys.time()
 
 ```
+
+<table class="altbg"><tr><td style="font-size:0.8em" width="100%">
 This may take a while depending on your computer's speed. If it is taking too long, we can cancel the "filterAndTrim" command by pressing the Escape key and then the Enter to to cancel the filtering process. We will used a pre-filtered result in the "filtered_backup" folder. Go to Windows explorer and rename this folder to just "filtered" so we can continue to the next step. 
+</td></tr></table>
+
 
 <a name="A5">
 <h4 style="font-weight:bold;color:#008C23"> Step 5. Learn sequence error rates to build error models for denoise purpose</h4>
+
+The next step is the first phase of the DADA2 amplicon denoising procedure. DADA2 is the second version of the DADA (The Divisive Amplicon Denoising Algorithm)([Rosen et al, 2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3563472/)). DADA was developed to model the 454-sequenced amplicon data, whereas DADA2 was designed specifically for the Illumina sequence reads ([Callahan et al, 2016](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4927377/)). In this step we use the quality-filtred reads for building the error models required by the DADA2 denoising algorithm.
 
 ```R
 dir.create("err_plots", showWarnings = FALSE)
