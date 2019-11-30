@@ -251,9 +251,11 @@ There are two general methods for finding the closest reference sequences (for t
 
 The alignment based method provides percent similarity information thus once the cloest reference sequence is identified, we also know how close the ASV is to the reference, in term of percent sequence identity. This information is useful to determine whether the ASV is  the same species (i.e., if 100% identical) of the reference. However the alignment is slow and can take a lot more computation time, especially if we are talking about millions of NGS reads. Luckily, the denoising process of DADA2 often reduces the number of reads from millions to hundreds, and thus drastically reduced the amount of time needed to calculate the percent similarity based on aligned sequences.
 
-The K-mer based non-alignment method, on the other hand does not consider the position of the K-mer in the sequence and only calculate the (highest) possible probility for an ASVs to belong to a reference. Eventhough this method require less computation time, the time diferennce between the alignment and non-alignment based methods is not significant.
+The K-mer based non-alignment method, on the other hand does not consider the position of the K-mer in the sequence and only calculate the (highest) possible probility for the vocabuary of K-mer words in an ASV to belong to a reference. Eventhough this method requires less computation time, the time diferennce between the alignment and non-alignment based methods is not significant when dealing with only hundreds of ASVs, rathaer than thousands of OTUs or millions of raw read data.
 
-In this tutorial we will use the non-alignment taxonomy assignment method provided by the DADA2 package. This default k-mer based assignemtn is based on the naive Bayesian classifier method developed by the Ribosomal Database Project (RDP) ([Wang et al, 2007](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1950982/). The fucntion is called "assignTaxonomy". 
+In this tutorial we will use the non-alignment taxonomy assignment method provided by the DADA2 package. This default k-mer based assignment is based on the naive Bayesian classifier method developed by the Ribosomal Database Project (RDP) ([Wang et al, 2007](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1950982/). The fucntion is called "assignTaxonomy". 
+
+The assignment will need a set of 16S rRNA gene reference sequences that is well curated with taxonomy information. There are several choices of the reference sequences. 
 
 
 
