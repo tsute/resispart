@@ -115,11 +115,12 @@ y
 <h4 style="font-weight:bold;color:navy"> R data types </h4>
 
 R has 5 different data types:
-1) character
-2) numeric (real or decimal)
-3) integer
-4) logical (true or false)
-5) complex
+1. character
+2. numeric (real or decimal)
+3. integer
+4. logical (true or false)
+5. complex
+
 
 ```R
 #### character data type
@@ -163,11 +164,24 @@ class(z)        # print the class name of z
 <h4 style="font-weight:bold;color:navy"> R data structures </h4>
 
 The data (of different types) can be combined to form data structures
-1) vectors - list of multiple data of the same type
-2) list - list of multiple data of various types
-3) matrix 
-4) data frame
-5) factors
+1. vectors - list of multiple data of the same type
+2. list - list of multiple data of various types
+3. matrix 
+4. data frame
+5. factors
+
+
+
+<h4 style="font-weight:bold;color:navy"> R Graphic Output </h4>
+
+One of the strength of R is its capability to generate graphical results such as plots, charts, and heatmaps. For example:
+
+```R
+plot(LakeHuron, type="l", main='type="l"')
+plot(LakeHuron, type="p", main='type=p"')
+plot(LakeHuron, type="b", main='type="b"')
+
+````
 
 <h4 style="font-weight:bold;color:navy"> Beyound basic R - install R packages </h4>
 
