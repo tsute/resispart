@@ -170,7 +170,7 @@ The data (of different types) can be combined to form data structures
 4. data frame
 5. factors
 
-*1. Vectors*
+*1. Vector*
 We use the c() function to create a vector.:
 
 ```R
@@ -203,7 +203,8 @@ print(t)
 ```
 
 *2. Matrix*
-A matrix in R consists of a table of data arranged in columns and rows. We use the matrix() function to create a matrix.
+
+A matrix in R consists of a 2D table of data arranged in rows and columna. We use the matrix() function to create a matrix:
 
 ```R
 # create a matrix with 3 rows and 5 column, 3x5, fill the data by column, not by row
@@ -221,6 +222,37 @@ mymatrix * 2
 mymatrix / 4
 
 ```
+
+*3. Array*
+
+An array in R is similar to a matrix, except a matrix is only two-dimension (2D) while an array can have multiple deminsions:
+
+```R
+# create an array with a dimension of 2x3x3:
+myarray <- array(c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18), dim=c(2,3,3)
+myarray
+
+# accessing an array element is in a similar manner:
+myarray[2,1,3]
+
+```
+
+*4. Factor*
+
+Factors in R have a data type used to store categorical variables, which can be either numeric or string. Most important advantage to convert integer or character to factor is, they can be used in statistical modeling where they will be implemented correctly. factor() is the function used to convert numerical or character variable to factor:
+
+```R
+# create a factor using the factor() function, adding the factor in vector format:
+myfactor=factor(c("Brazil","USA","USA","Brazil","Norway","Norway","Brazil"))
+# create another factor where the level is ordered 
+myfactor=factor(c("Brazil","USA","USA","Brazil","Norway","Norway","Brazil"),level=c("USA","Brazil","Norway","Sweden"))
+myfactor
+
+
+```
+
+<img src="https://gyazo.com/d27b715dff466cde955facb0c6b91e93.png">
+
 
 
 <h4 style="font-weight:bold;color:navy"> R Graphic Output </h4>
