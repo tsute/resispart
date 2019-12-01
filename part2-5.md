@@ -77,7 +77,26 @@ OUtput:
 <a name="A4">
 <h4 style="font-weight:bold;color:brown"> Step 4. Make some beta-diversity plots</h4>
 
-Beta diversity measures the similarity/dissimilarity between samples or groups of samples. 
+Beta diversity measures the similarity/dissimilarity between samples or groups of samples. Common ways to measure the similarity include:
+
+1. Bray–Curtis dissimilarity
+- based on abundance or read count data 
+- differences in microbial abundances between two samples (e.g., at species level) 
+    values are from 0 to 1
+    0 means both samples share the same species at exact the same abundances
+    1 means both samples have complete different species abundances
+
+2. Jaccard distance
+- based on presence or absence of species (does not include abundance information) 
+- different in microbial composition between two samples
+    0 means both samples share exact the same species
+    1 means both samples have no species in common
+
+3. UniFrac
+- sequence distances (phylogenetic tree) 
+- based on the fraction of branch length that is shared between two samples or unique to one or the other sample
+unweighted UniFrac: purely based on sequence distances (does not include abundance information)
+weighted UniFrac: branch lengths are weighted by relative abundances (includes both sequence and abundance information)
 
 
 ```R
