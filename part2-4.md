@@ -215,6 +215,7 @@ The PCR step prior to the sequencing often generates chimera - a hybrid artifial
 seqtab.nochim <- removeBimeraDenovo(seqtab, method="consensus", multithread=TRUE, verbose=TRUE)
 #bimera.finished=Sys.time()
 write.table(t(seqtab.nochim),file="seqtab.nochim",sep="\t",quote=FALSE)
+write.xlsx(seqtab.nochim,file="dada2_asv.xlsx",sheetName="DADA2 ASV")
 
 ```
 
@@ -224,7 +225,6 @@ write.table(t(seqtab.nochim),file="seqtab.nochim",sep="\t",quote=FALSE)
 Use the following R codes to generate a summary of all the processes and keep track of number and percentage of reads after each step.
 
 ```R
-library(xlsx)
 getN <- function(x) sum(getUniques(x))
 track <- cbind(reads.filtered, sapply(dadaFs, getN), sapply(dadaRs, getN), sapply(mergers, getN), rowSums(seqtab.nochim))
 colnames(track) <- c("input", "filtered", "denoisedF", "denoisedR", "merged", "nonchim")
@@ -234,7 +234,7 @@ rownames(track)[nrow(track)]="Row Sum"
 track=rbind(track,(track[nrow(track),]/track[nrow(track)])*100)
 rownames(track)[nrow(track)]="Percentage"
 write.xlsx(t(track),file="dada2_summary.xlsx",sheetName="dada2 summary")
-
+ 
 ```
 
 <img src="https://i.gyazo.com/c5ad59bbc9aa68b739dc7ea64cd0e908.png">
