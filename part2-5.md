@@ -148,13 +148,40 @@ Species level bar chart:
 <a name="A6">
 <h4 style="font-weight:bold;color:brown"> Step 6. Identify differentially represented species</h4>
 
+The functionality of R can be extended to other pacakge. In the following quick demo, we use a different package "MetacodeR" to visualize the differentially represented species in a comparion:
+
 ```R
-#### Under construction
+# Install the metacoder package
+BiocManager::install("metacoder")
+#
+load("plot_body_site_diff.Rdata")
+load("phyloseq_rm_na_tax.Rdata")
+ps_species=tax_glom(ps,taxrank="Species")
+ps_species_rm_na=phyloseq_rm_na_tax(ps_species)
+mc=parse_phyloseq(ps_species_rm_na)
+mc$data$otu_prop=calc_obs_props(mc,data="otu_table",cols=mc$data$sample_data$sample_id)
+mc$data$tax_prop=calc_taxon_abund(mc,data="otu_prop",cols=mc$data$sample_data$sample_id)
+
+comcol=mc$data$sample_data$Concentration
+comp1="100 ug/ml"
+comp2="0 ug/ml"
+mc$data$diff_table <- compare_groups(mc, data='tax_prop', cols= mc$data$sample_data$sample_id, groups= comcol,combinations = list(c(comp1,comp2)))
+mc <- mutate_obs(mc, "diff_table", wilcox_p_value = p.adjust(wilcox_p_value, method = "fdr"), log2_median_ratio = ifelse(wilcox_p_value < 0.5 | is.na(wilcox_p_value), log2_median_ratio, 0))
+title="100 vs 0 ug-ml";
+plot_body_site_diff(mc,comp1,comp2,"MetacodeR",1,"pdf","species",title)
 
 ```
 
+Differentially represented species between antibiotic treatment and control samples:
+
+<img src="https://i.gyazo.com/b722083a6a048b5c9b0cf1776af0deb0.png">
+
+
+
 <a name="A7">
-<h4 style="font-weight:bold;color:brown"> Step 7. Export tables for more downstream analysis using MicrobiomAnalyst</h4>
+<h4 style="font-weight:bold;color:brown"> Step 7. Export tables for more downstream analysis using MicrobiomeAnalyst</h4>
+
+Phyloseq and R have many state-of-the-art bioinformatics tools and packages for downstream analyses. However the command-line interface usually is difficult to learn and use. In the next section we will use an online tool *MicrobiomeAnalyst* to help us perform more analyses in a very user-friendly mannor. Before doing so, we will export three tables that are required by MicrobiomeAnalyst:
 
 ```R
 library(tibble)
