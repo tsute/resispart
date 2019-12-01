@@ -171,6 +171,7 @@ The data (of different types) can be combined to form data structures
 5. factors
 
 *1. Vectors*
+We use the c() function to create a vector.:
 
 ```R
 #### vectors examples
@@ -200,6 +201,27 @@ t <- x[c(-2,-5)]
  
 print(t)
 ```
+
+*2. Matrix*
+A matrix in R consists of a table of data arranged in columns and rows. We use the matrix() function to create a matrix.
+
+```R
+# create a matrix with 3 rows and 5 column, 3x5, fill the data by column, not by row
+mymatrix <- matrix(c(1,2,3,5,6,7,9,10,12,13,14,15), nrow=3, ncol=5, byrow=FALSE)
+mymatrix
+
+# Accessing elements of a matrix by row and column coordination
+mymatrix[3,5] # row 6, column 5
+mymatrix[2-4,3-5] # rows 2-4, columns 3-5
+
+# can perform calculation on all elements of a matrix
+mymatrix + 1
+mymatrix - 1
+mymatrix * 2
+mymatrix / 4
+
+```
+
 
 <h4 style="font-weight:bold;color:navy"> R Graphic Output </h4>
 
