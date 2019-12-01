@@ -239,7 +239,7 @@ myarray[2,1,3]
 
 *4. Factor*
 
-Factors in R have a data type used to store categorical variables, which can be either numeric or string. Most important advantage to convert integer or character to factor is, they can be used in statistical modeling where they will be implemented correctly. factor() is the function used to convert numerical or character variable to factor:
+A factor in R have a unique data type that is used to store categorical variables, which can be either numeric or string. Most important advantage to convert integer or character to factor is that, they can be used in statistical modeling where they will be implemented correctly. factor() is the function used to convert numeric or character variables to factors:
 
 ```R
 # create a factor using the factor() function, adding the factor in vector format:
