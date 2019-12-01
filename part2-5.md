@@ -45,22 +45,40 @@ Now the phyloseq object is ready for many downstream diversity analysis tools th
 <a name="A3">
 <h4 style="font-weight:bold;color:brown"> Step 3. Make some alpha-diversity plots</h4>
 
+Alpha diversity measures the number of taxonomy units (Genus, Species, OTUs, or ASVs) and their abundance within each sample. There are many different ways to measure/estimate the alpha diversity of the sample. The most common estimators for alpha diversity include 
+1. Observed species - only count the total number of the species in the sample, does not care about the abundance)
+2. Shannon estimator - considers the number of species that are more abundant, disregarding the very low abundant species)
+3. Simpson estimator - considers the most abundant species, disregarding the low abudant species)
+
+Depending on the question you ask, one may prefer one estimator over the other. Here we practice to calculate and plot the alpha diversity in our demo samples using these three most commonly used diversity measurements:
 
 
 ```R
+# use the plot_richness function provided by Phyloseq package
 alpha_plot=plot_richness(ps, x="Concentration", measures=c("Observed","Shannon", "Simpson"), title="Antibiotics Treatment") + geom_boxplot() + theme(plot.title = element_text(hjust = 0.5))
+# make sure the plots are shown in the order we desire
 group_order=c("0 ug/ml","25 ug/ml","50 ug/ml","100 ug/ml")
 alpha_plot$data$Concentration<-as.character(alpha_plot$data$Concentration)
 alpha_plot$data$Concentration<-factor(alpha_plot$data$Concentration,levels=group_order)
+# now generate the plot
 alpha_plot
+# Also save a copy of the plot in the PDF format
 pdf(file="alpha_diversity_box_plot.pdf",width=8,height=6)
 alpha_plot
 dev.off()
 
 ```
 
+OUtput:
+
+<img src="https://i.gyazo.com/12058110d020e3a507c92fb767148a7d.png">
+
+
 <a name="A4">
 <h4 style="font-weight:bold;color:brown"> Step 4. Make some beta-diversity plots</h4>
+
+Beta diversity measures the similarity/dissimilarity between samples or groups of samples. 
+
 
 ```R
 ps.prop <- transform_sample_counts(ps, function(otu) otu/sum(otu))
