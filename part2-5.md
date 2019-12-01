@@ -120,6 +120,8 @@ Output:
 
 <a name="A5">
 <h4 style="font-weight:bold;color:brown"> Step 5. Plot genus and species level bar charts</h4>
+  
+With Phyloseq, it is fairly easy to generate the percent bar charts for the most abundant species or genera:
 
 ```R
 ps.genus=tax_glom(ps.prop,taxrank="Genus")
@@ -133,6 +135,15 @@ ps.top10.species <- prune_taxa(top10.species,ps.species)
 plot_bar(ps.top10.species,x="Concentration",fill="Species")
 
 ```
+
+Genus level bar chart:
+
+<img src="https://i.gyazo.com/c7a7b0d0943ced558eeaca1e5ba70dc2.png">
+
+Species level bar chart:
+
+<img src="https://i.gyazo.com/df1a2d398c778ed6555ccb12993bc7c4.png">
+
 
 <a name="A6">
 <h4 style="font-weight:bold;color:brown"> Step 6. Identify differentially represented species</h4>
