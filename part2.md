@@ -170,7 +170,36 @@ The data (of different types) can be combined to form data structures
 4. data frame
 5. factors
 
+*1. Vectors*
 
+```R
+#### vectors examples
+# numeric vector
+X <- c(1,-2,5.3,6,-20,4)
+print(X)
+
+# character vector 
+Y <- c("one","two","three") 
+print(Y)
+
+#logical vector
+Z <- c(FALSE,TRUE,FALSE,FALSE,TRUE,FALSE)
+print(Z)
+
+# Accessing vector elements using position.
+x <- c("Jan","Feb","Mar","April","May","June","July")
+y <- x[c(2,3,6)]
+print(y)
+ 
+# Accessing vector elements using logical indexing.
+v <- x[c(TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE)]
+print(v)
+ 
+# Accessing vector elements using negative indexing.
+t <- x[c(-2,-5)]
+ 
+print(t)
+```
 
 <h4 style="font-weight:bold;color:navy"> R Graphic Output </h4>
 
