@@ -37,7 +37,7 @@ If the above link doesn't work try one of these alternative download links:<br><
   <a href="https://1drv.ms/u/s!Amu_vVYXMX9XicpMCEljLG-u59QPDw?e=vING0V">One Drive</a><br>
   <a href="https://www.dropbox.com/s/qm0gull017umtot/RESISPART_Bioinformatics_Workshop_Demo.zip?dl=0">Dropbox</a><br>
   <br>
-  Click on one of the above links and follow the direction to download the file *RESISPART_Bioinformatics_Workshop_Demo.zip*<br>
+  Click on one of the above links and follow the direction to download the file <b>RESISPART_Bioinformatics_Workshop_Demo.zip</b><br>
   Find the file on your computer, double-click to unzip it and then move the entire content to the "resispart" working directory.
 
   </td></tr></table>
