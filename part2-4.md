@@ -288,6 +288,10 @@ head(taxa.print)
 
 ```
 
+Beginning of the taxa assignment output:
+
+<img src="https://i.gyazo.com/d3b925b82d10fd020ef54e7cf1ab61db.png">
+
 Once all the ASVs are all assgned with the potential taxonomy we are ready for many possible diversity analyses.
 
 ## [Next ▶](/resispart/part2-5)
