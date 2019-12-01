@@ -14,8 +14,15 @@ theme_set(theme_bw())
 
 <a name="A2">
 <h4 style="font-weight:bold;color:brown"> Step 2. Convert the ASV from DADA2 into a Phyloseq object</h4>
+  
+If you look at the Excel file we generated at the end of the DADA2 step, we will see that the row names are the sample names and the column names are the long ASV sequences.
+
+<img src="https://gyazo.com/d55451dfe4aac77cf72ae5282c1857c7.png">
+
+It is very clumpsy to use the long sequences as the name of the ASV. The following R codes will help to rename the ASV using the ASV as the prefix and a sequential number for the IDs. Also we do not delete the ASV sequences in case we need them later. Hence the sequences are stroed in an object called "dna" using a function "DNAStringSet" provided by the Biostrings.
 
 ```R
+#
 rownames(seqtab.nochim)
 samples.out=rownames(seqtab.nochim)
 meta=read.table(file="meta.txt",sep="\t",header=TRUE,colClasses="factor",row.names=1)
@@ -26,7 +33,7 @@ dna <- Biostrings::DNAStringSet(taxa_names(ps))
 names(dna) <- taxa_names(ps)
 ps <- merge_phyloseq(ps, dna)
 taxa_names(ps) <- paste0("ASV", seq(ntaxa(ps)))
-
+ 
 ```
 
 <a name="A3">
