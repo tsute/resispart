@@ -36,5 +36,5 @@ This is where other ways of doing the same thing will be described<br>
   <b>Note:</b> This is the note box.<br>
 </td></tr></table>
 
-## [Next ▶](/resispart/part2)
+## [◀ TOC](/resispart) ... [Next ▶](/resispart/part2)
 
