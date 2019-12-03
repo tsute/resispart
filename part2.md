@@ -306,6 +306,17 @@ myfactor
 
 One of the strength of R is its capability to generate graphical results such as plots, charts, and heatmaps. For example:
 
+*Scatter plot*
+
+```R
+# We will use
+mtcars
+plot(x = mtcars$wt, y = mtcars$mpg)
+
+# passing multiple variables to plot
+plot(mtcars[, 4:6])
+```
+
 ```R
 
 plot(LakeHuron, type="l", main='type="l"')
