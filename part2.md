@@ -314,6 +314,11 @@ plot(LakeHuron, type="b", main='type="b"')
 
 ````
 
+<table  class="notebg"><tr><td style="font-size:0.8em;font-style:italic;">
+  <b>Note:</b> R has 104 built in data sets right after you install the software. To view a list of these data sets, use the function dat().<br>
+  
+</td></tr></table>
+
 <h4 style="font-weight:bold;color:navy"> Beyound basic R - install R packages </h4>
 
 Copy and paste the below R package installation codes to install the packages that we will be using in this workshop:
