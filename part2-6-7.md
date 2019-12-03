@@ -21,4 +21,4 @@ In case the site is not avaialble, Achal provided the R codes for the Microbiome
 This section is inteded to be demonstrated in a flexiable format, if time permits.
 
 
-## [Back ▶](/resispart)
+## [◀ Previous](/resispart/part2-5) ... [TOC ▶](/resispart)
