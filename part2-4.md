@@ -22,8 +22,10 @@ Next, do this to download and extract a set of demo files:
 ```R
 #download from an FTP site
 download.file("https://github.com/tsute/resispart/releases/download/demo_data/RESISPART_Bioinformatics_Workshop_Demo.zip","demo.zip")
+
 ## then unzip it, exdir tells R to just extract to the current working directory "."
 unzip("demo.zip",exdir=".")
+
 #list the content of the unzipped files
 list.files()
 
@@ -52,7 +54,8 @@ path <- "fastq"
 fnFs <- sort(list.files(path, pattern="_R1.fastq", full.names = TRUE))
 fnRs <- sort(list.files(path, pattern="_R2.fastq", full.names = TRUE))
 sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
-#sample.names 
+
+sample.names 
 
 ```
 
@@ -60,14 +63,18 @@ sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
 <h4 style="font-weight:bold;color:#008C23"> Step 3. Quality plots</h4>
 
 Make a plot for the read pairs (R1 and R2) of the first sample:
+
 ```R
 plotQualityProfile(c(fnFs[1],fnRs[1]))
+
+
 ```
 Quality plot output:
 
 <img src="https://i.gyazo.com/f78c3b831e38438c7f7b6b1ffb4ebdd0.png">
 
 Now we make a loop to plot all the read pairs in a single shot:
+
 ```R
 dir.create("quality_plots", showWarnings = F)
 
@@ -76,9 +83,11 @@ for (i in 1:length(fnRs)) {
 quality_plots[[i]]=plotQualityProfile(c(fnFs[i],fnRs[i]))
 }
 quality_plots_all=ggarrange(plotlist=quality_plots,ncol=1,nrow=length(fnRs))
+
 pdf("quality_plots/quality_plots_all.pdf", width=10, height=3*length(fnRs))
 quality_plots_all
 dev.off()
+
 
 ```
 
@@ -103,9 +112,10 @@ Based on the above sequence plots, we observe that quality score starts to drop 
 dir.create("filtered", showWarnings = FALSE)
 filtFs <- file.path("filtered", paste0(sample.names, "_F_filt.fastq.gz"))
 filtRs <- file.path("filtered", paste0(sample.names, "_R_filt.fastq.gz"))
-#reads.filtered.start=Sys.time()
+reads.filtered.start=Sys.time()
 reads.filtered <- filterAndTrim(fnFs, filtFs, fnRs, filtRs, truncLen=c(280,220),maxN=0, maxEE=c(2,2), truncQ=2, rm.phix=TRUE,compress=TRUE, multithread=TRUE)
-#reads.filtered.finished=Sys.time()
+reads.filtered.finished=Sys.time()
+
 
 ```
 
@@ -139,6 +149,7 @@ pdf("err_plots/errR.pdf")
 plotErrors(errR, nominalQ=TRUE)
 dev.off()
 
+
 ```
 
 The plots look like this:
@@ -166,6 +177,7 @@ Perform the following commands to dereplicate the reads:
 derepFs <- derepFastq(filtFs, verbose=TRUE)
 derepRs <- derepFastq(filtRs, verbose=TRUE)
 #derepFastq.finished=Sys.time()
+
 
 ```
 
@@ -302,4 +314,4 @@ Beginning of the taxa assignment output:
 
 Once all the ASVs are all assgned with the potential taxonomy we are ready for many possible diversity analyses.
 
-## [Next ▶](/resispart/part2-5)
+## [◀ Previous](/resispart/part2] ## [Next ▶](/resispart/part2-5)
