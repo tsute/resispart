@@ -13,7 +13,7 @@ Online Tutorial for MicrobiomeAnalysis:
 <https://www.microbiomeanalyst.ca/MicrobiomeAnalyst/resources/tutorials/MDP.pdf>
 
 In case the site is not avaialble, Achal provided the R codes for the MicrobiomeAnalyst:
-<ftp://www.homd.org/pub/resistpart/Downstream%20_analysis_resourcesMA.zip>
+<https://github.com/tsute/resispart/releases/download/demo_data/Downstream._analysis_resourcesMA.zip>
 
 <a name="A7">
 <h3 style="font-weight:bold;color:purple"> 7. Beyond microbiome sequence data – Meta-genomic and Meta-transcriptomic data</h3>
