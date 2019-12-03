@@ -269,12 +269,12 @@ list3
 ```
 
 
-* 5. Data frame
+*5. Data frame*
 
-A data frame is a 2D data table with column and row names
+A data frame is a 2D data table that can holds different types of data (matrix and array can only hold sample types of data).
 
 ```R
-# build a 
+# build a random data frame
 Number = c(2, 3, 5) 
 Character = c("aa", "bb", "cc") 
 Logical = c(TRUE, FALSE, TRUE) 
