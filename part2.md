@@ -426,4 +426,4 @@ library("Biostrings")
 library("xlsx")
 ```
 
-## [Next ▶](/resispart/part2-4)
+## [◀ Previous(/resispart/part1) ... [Next ▶](/resispart/part2-4)
