@@ -21,18 +21,19 @@ Next, do this to download and extract a set of demo files:
 
 ```R
 #download from an FTP site
-download.file("ftp://www.homd.org/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip","temp.zip")
+download.file("https://github.com/tsute/resispart/releases/download/demo_data/RESISPART_Bioinformatics_Workshop_Demo.zip","demo.zip")
 ## then unzip it, exdir tells R to just extract to the current working directory "."
-unzip("temp.zip",exdir=".")
+unzip("demo.zip",exdir=".")
 #list the content of the unzipped files
 list.files()
+
 ```
 The file size is 1.1Gb so it may take some time to download, depending on the Internet connection speed.
 <img src="https://i.gyazo.com/e6e4ebd1a04be63bd6cf1cdd3b222297.png">
 
 <table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em" width="100%">
 If the above link doesn't work try one of these alternative download links:<br><br>
-<a href="http://www.homd.org/ftp/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip">HOMD Download Link</a><br>
+<a href="ftp://www.homd.org/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip">HOMD Download Link</a><br>
   <a href="https://drive.google.com/open?id=1A5fHVqJ2Nfloxvs-Ej8E-F2MhawvVqxe">Google Drive</a><br>
   <a href="https://1drv.ms/u/s!Amu_vVYXMX9XicpMCEljLG-u59QPDw?e=vING0V">One Drive</a><br>
   <a href="https://www.dropbox.com/s/qm0gull017umtot/RESISPART_Bioinformatics_Workshop_Demo.zip?dl=0">Dropbox</a><br>
