@@ -315,6 +315,75 @@ plot(x = mtcars$wt, y = mtcars$mpg)
 
 # passing multiple variables to plot
 plot(mtcars[, 4:6])
+
+```
+
+*Line plot*
+
+```R
+# base graphic
+plot(x = pressure$temperature, y = pressure$pressure, type = "l")
+
+# add points
+points(x = pressure$temperature, y = pressure$pressure)
+
+# add second line in red color
+lines(x = pressure$temperature, y = pressure$pressure/2, col = "red")
+
+# add points to second line
+points(x = pressure$temperature, y = pressure$pressure/2, col = "red")
+
+```
+
+*Bar Chart*
+
+Some examples:
+
+```R
+# Plot default DOB dataset
+barplot(height = BOD$demand, names.arg = BOD$Time)
+
+# Plotting Categorical data
+age <- c(17,18,18,17,18,19,18,16,18,18)
+
+# use table() function to categorize the count data by age
+table(age)
+
+# now make a bar plot in a little more fancy way;
+barplot(table(age),
+main="Age Count of 10 Students",
+xlab="Age",
+ylab="Count",
+border="red",
+col="blue",
+density=10
+)
+
+```
+
+*Histogram*
+
+```R
+# A most basis historgram showing a set of normally distibuted data
+# make a set of 500 normmally distributed data
+n=rnorm(500)
+hist(n)
+
+# plot mpg frequency data 
+# binning size is 10
+hist(mtcars$mpg, breaks = 10)
+
+# boxplot of mpg based on interaction of two variables
+boxplot(mpg ~ cyl + am, data = mtcars)
+
+```
+
+*Box plot*
+
+```R
+# When x is a factor (as opposed to a numeric vector), it will automatically create a box plot:
+plot(as.factor(mtcars$cyl), mtcars$mpg)
+
 ```
 
 ```R
