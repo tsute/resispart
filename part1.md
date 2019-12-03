@@ -33,7 +33,7 @@ This is where other ways of doing the same thing will be described<br>
 <h3 style="font-weight:bold"> 3. Notes and comments </h3>
 
 <table  class="notebg"><tr><td style="font-size:0.8em;font-style:italic;">
-  <b>Note:</b> R provides 104 built-in data sets that can be viewed with data().<br>
+  <b>Note:</b> This is the note box.<br>
 </td></tr></table>
 
 ## [Next ▶](/resispart/part2)
