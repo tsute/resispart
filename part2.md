@@ -80,6 +80,8 @@ You should get an output like this:
 
 <h4 style="font-weight:bold;color:navy"> Using R as a calculator</h4>
 
+These are some basic mathematic operators:
+
 ```R
 # BASIC ARITHMETIC OPERATORS
 2-5                # subtraction
@@ -92,6 +94,21 @@ exp(4)             # e^4 = 54.598 (give or take)
 log(2.742)         # natural log of 2.74
 log10(1000)        # common log of 1000
 pi                 # 3.14159... 
+```
+
+<h4 style="font-weight:bold;color:navy"> Using R for logical tests</h4>
+
+These are some basic logical operators:
+
+```R
+# BASIC ARITHMETIC OPERATORS
+1 & 0              # AND
+1 | 0              # OR
+2 > 1              # comparison
+2 < 1              # comparison
+3>=3               # comparison
+3<=4               # comparison
+
 ```
 
 <h4 style="font-weight:bold;color:navy"> Store result (or anything) in a variable (object)</h4>
@@ -165,12 +182,14 @@ class(z)        # print the class name of z
 
 The data (of different types) can be combined to form data structures
 1. vectors - list of multiple data of the same type
-2. list - list of multiple data of various types
-3. matrix 
-4. data frame
-5. factors
+2. matrix  - a 2D table of the same type of data
+3. array - a multi-dimension tabel of the same types of data
+4. list - list of multiple data of various types
+5. data frame - a 2D table of same or different types of data
+6. factors - a special type of data for statistical modelling
 
 *1. Vector*
+
 We use the c() function to create a vector.:
 
 ```R
@@ -237,7 +256,36 @@ myarray[2,1,3]
 
 ```
 
-*4. Factor*
+*4. List*
+
+A list is like a vector, but it can holds different type of data, even another list.
+
+```R
+list1=list(1,2,3,"A","B","C")
+list2=list("A","B","C",1,2,3,T,F)
+list3=list(list1,list2)
+list3
+
+```
+
+
+* 5. Data frame
+
+A data frame is a 2D data table with column and row names
+
+```R
+# build a 
+Number = c(2, 3, 5) 
+Character = c("aa", "bb", "cc") 
+Logical = c(TRUE, FALSE, TRUE) 
+df = data.frame(n, s, b)
+
+# R comes with a default data frame called "mtcars"
+mtcars
+
+```
+
+*6. Factor*
 
 A factor in R have a unique data type that is used to store categorical variables, which can be either numeric or string. Most important advantage to convert integer or character to factor is that, they can be used in statistical modeling where they will be implemented correctly. factor() is the function used to convert numeric or character variables to factors:
 
@@ -247,7 +295,6 @@ myfactor=factor(c("Brazil","USA","USA","Brazil","Norway","Norway","Brazil"))
 # create another factor where the level is ordered 
 myfactor=factor(c("Brazil","USA","USA","Brazil","Norway","Norway","Brazil"),level=c("USA","Brazil","Norway","Sweden"))
 myfactor
-
 
 ```
 
@@ -260,6 +307,7 @@ myfactor
 One of the strength of R is its capability to generate graphical results such as plots, charts, and heatmaps. For example:
 
 ```R
+
 plot(LakeHuron, type="l", main='type="l"')
 plot(LakeHuron, type="p", main='type=p"')
 plot(LakeHuron, type="b", main='type="b"')
