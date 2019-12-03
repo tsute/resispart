@@ -314,4 +314,4 @@ Beginning of the taxa assignment output:
 
 Once all the ASVs are all assgned with the potential taxonomy we are ready for many possible diversity analyses.
 
-## [◀ Previous](/resispart/part2] ## [Next ▶](/resispart/part2-5)
+## [◀ Previous](/resispart/part2) ## [Next ▶](/resispart/part2-5)
