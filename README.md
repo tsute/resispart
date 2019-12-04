@@ -1,10 +1,10 @@
 <h2>Table of Content</h2>
 
-[Instruction: How to use this workshop tutorial](part1) ([Introduction Slides](https://tsute.github.io/resispart/pdf/workshop_intro_3.pdf))
+[Instruction: How to use this workshop tutorial](part1) 
 
 [Workshop Tutorial](part2)
 
-* [1. Introduction](part2/#A1)
+* [1. Introduction](part2/#A1) ([Introduction Slides](https://tsute.github.io/resispart/pdf/workshop_intro_3.pdf))
 * [2. Installation of the R software and packages for analyzing microbiome sequence data](part2/#A2)
 * [3. Basic R operations](part2/#A3)
 * [4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads](part2-4)
