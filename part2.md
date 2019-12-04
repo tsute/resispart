@@ -18,9 +18,15 @@ R is short for "The R Project for Statistical Computing" and is a free software 
 
 In this workshop we will use several sotftware packges developed on the R platform. Henct the first thing is to download and install R on your computer.
 
-For this workshop we will pratice the analysis on Widnows 10 Pcs so we can download the latest R for Windows computers from this link:
+For this workshop we will pratice the analysis on a personal computer click the below links to download either Widnows 10 or Max OS X version of R to install:
+
+Windows 10 version:
 
 <https://vps.fmvz.usp.br/CRAN/bin/windows/base/R-3.6.1-win.exe>
+
+Max OS X version:
+
+<https://brieger.esalq.usp.br/CRAN/bin/macosx/R-3.6.1.pkg>
 
 click above link and save the file to the default download location on your computer. Find the downloaded file, double-click to install R on your computer. During the installation just respond with default options.
 
