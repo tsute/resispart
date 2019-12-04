@@ -1,6 +1,6 @@
 <h2>Table of Content</h2>
 
-[Instruction: How to use this workshop tutorial](part1) ([Introduction Slides](https://tsute.github.io/resispart/pdf/workshop_intro_1.pdf)
+[Instruction: How to use this workshop tutorial](part1) ([Introduction Slides](https://tsute.github.io/resispart/pdf/workshop_intro_3.pdf))
 
 [Workshop Tutorial](part2)
 
