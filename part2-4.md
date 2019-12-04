@@ -73,6 +73,10 @@ Quality plot output:
 
 <img src="https://i.gyazo.com/f78c3b831e38438c7f7b6b1ffb4ebdd0.png">
 
+<table  class="notebg"><tr><td style="font-size:0.8em;">
+In gray-scale is a heat map of the frequency of each quality score at each base position. The median quality score at each position is shown by the green line, and the quartiles of the quality score distribution by the orange lines. The red line shows the scaled proportion of reads that extend to at least that position
+</td></tr></table>
+
 Now we make a loop to plot all the read pairs in a single shot:
 
 ```R
