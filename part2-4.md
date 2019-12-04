@@ -245,7 +245,29 @@ The PCR step prior to the sequencing often generates chimera - a hybrid artifial
 seqtab.nochim <- removeBimeraDenovo(seqtab, method="consensus", multithread=TRUE, verbose=TRUE)
 #bimera.finished=Sys.time()
 write.table(t(seqtab.nochim),file="seqtab.nochim",sep="\t",quote=FALSE)
-write.xlsx(seqtab.nochim,file="dada2_asv.xlsx",sheetName="DADA2 ASV")
+write_xlsx(data.frame(seqtab.nochim),"seqtab.nochim.xlsx")
+
+```
+
+modified R
+
+
+```R
+derepFs <- derepFastq(filtFs, verbose=TRUE)
+derepRs <- derepFastq(filtRs, verbose=TRUE)
+load("errF.RData")
+load("errR.RData")
+names(derepFs) <- sample.names
+names(derepRs) <- sample.names
+load("dadaFs.RData")
+load("dadaRs.RData")
+load("mergers.RData")
+load("seqtab.nochim.RData")
+
+write.table(t(seqtab.nochim),file="seqtab.nochim",sep="\t",quote=FALSE)
+
+write_xlsx(data.frame(seqtab.nochim),"seqtab.nochim.xlsx")
+
 
 ```
 
