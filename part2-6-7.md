@@ -20,7 +20,7 @@ In case the site is not avaialble, Achal provided the R codes for the Microbiome
 
 <img src="https://gyazo.com/05f0298add27a516335e832daa7eaae6.png">
 
-OmicX maintain a list of software tools for metagenomic analysis
+OmicX web site maintains a list of software tools for metagenomic analysis
 
 <https://omictools.com/metagenomics-category>
 
