@@ -277,6 +277,7 @@ write_xlsx(data.frame(seqtab.nochim),"seqtab.nochim.xlsx")
 Use the following R codes to generate a summary of all the processes and keep track of number and percentage of reads after each step.
 
 ```R
+load("reads.filtered.RData")
 getN <- function(x) sum(getUniques(x))
 track <- cbind(reads.filtered, sapply(dadaFs, getN), sapply(dadaRs, getN), sapply(mergers, getN), rowSums(seqtab.nochim))
 colnames(track) <- c("input", "filtered", "denoisedF", "denoisedR", "merged", "nonchim")
@@ -285,7 +286,7 @@ track=rbind(track,colSums(track))
 rownames(track)[nrow(track)]="Row Sum"
 track=rbind(track,(track[nrow(track),]/track[nrow(track)])*100)
 rownames(track)[nrow(track)]="Percentage"
-write_xlsx(t(track),file="dada2_summary.xlsx")
+write_xlsx(data.frame(t(track)),"dada2_summary.xlsx")
  
 ```
 
