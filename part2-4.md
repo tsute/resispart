@@ -51,13 +51,19 @@ If the above link doesn't work try one of these alternative download links:<br><
 ```R
 path <- "fastq"
 #list.files(path)
-fnFs <- sort(list.files(path, pattern="_R1.fastq", full.names = TRUE))
-fnRs <- sort(list.files(path, pattern="_R2.fastq", full.names = TRUE))
+fnFs <- sort(list.files(path, pattern="_R1.fastq", full.names = TRUE)) # store forward (R1) sequence files in this object
+fnRs <- sort(list.files(path, pattern="_R2.fastq", full.names = TRUE)) # store reverse (R2) sequence files in this object
 sample.names <- sapply(strsplit(basename(fnFs), "_"), `[`, 1)
 
+# type the object name to see what sample names we have
 sample.names 
 
 ```
+
+<img src="https://i.gyazo.com/af5b6e496e6b3e79476a26b02cf2b64d.png">
+
+In this workshop we have all together 3,383,251 x 2 sequences in 12 samples (each sample has two files R1 and R2). These are called pair-end reads. The Illumina sequencer can sequence both ends of a DNA amplicon at the same time, expanding the sequence length and span. If the two reads overlap enough we can also merge them together into a single sequence from each pair of the reads. We will process them seperately first for quality filtering and later merge them together for downstream analysis.
+
 
 <a name="A3">
 <h4 style="font-weight:bold;color:#008C23"> Step 3. Quality plots</h4>
