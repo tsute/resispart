@@ -285,7 +285,7 @@ track=rbind(track,colSums(track))
 rownames(track)[nrow(track)]="Row Sum"
 track=rbind(track,(track[nrow(track),]/track[nrow(track)])*100)
 rownames(track)[nrow(track)]="Percentage"
-write.xlsx(t(track),file="dada2_summary.xlsx",sheetName="dada2 summary")
+write_xlsx(t(track),file="dada2_summary.xlsx")
  
 ```
 
