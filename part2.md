@@ -254,7 +254,7 @@ An array in R is similar to a matrix, except a matrix is only two-dimension (2D)
 
 ```R
 # create an array with a dimension of 2x3x3:
-myarray <- array(c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18), dim=c(2,3,3)
+myarray <- array(c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18), dim=c(2,3,3))
 myarray
 
 # accessing an array element is in a similar manner:
@@ -417,7 +417,7 @@ BiocManager::install("ggplot2")
 BiocManager::install("ggpubr")
 BiocManager::install("phyloseq")
 BiocManager::install("Biostrings")
-BiocManager::install("xlsx")
+BiocManager::install("writexl")
 
 ```
 
@@ -429,7 +429,7 @@ library("ggpubr")
 library("ggplot2")
 library("phyloseq")
 library("Biostrings")
-library("xlsx")
+library("writexl")
 ```
 
 ## [◀ Previous](/resispart/part1) ... [Next ▶](/resispart/part2-4)
