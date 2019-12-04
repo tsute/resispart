@@ -253,8 +253,8 @@ modified R
 
 
 ```R
-derepFs <- derepFastq(filtFs, verbose=TRUE)
-derepRs <- derepFastq(filtRs, verbose=TRUE)
+#derepFs <- derepFastq(filtFs, verbose=TRUE)
+#derepRs <- derepFastq(filtRs, verbose=TRUE)
 load("errF.RData")
 load("errR.RData")
 names(derepFs) <- sample.names
