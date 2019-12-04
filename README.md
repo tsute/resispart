@@ -28,7 +28,7 @@
 	* [Step 6. Identify differentially represented species](part2-5/#A6)
 	* [Step 7. Export tables for more downstream analysis using MicrobiomeAnalyst](part2-5/#A7)
 * [6. Use of the MicrobiomeAnalyst online tools for statistical, visual and meta-analysis of microbiome data](part2-6-7)
-* [7. Beyond microbiome sequence data – Meta-genomic and Meta-transcriptomic data](part2-67)  
+* [7. Beyond microbiome sequence data – Meta-genomic and Meta-transcriptomic data](part2-6-7)  
 
 
 
