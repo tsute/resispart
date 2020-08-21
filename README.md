@@ -10,7 +10,7 @@
 * [4. Use of the R DADA2 package to process the 16S rRNA gene sequence reads](part2-4)
 	* [Step 1. Create a working directory and download a set of demo Illumina 16S rRNA sequences](part2-4/#A1)
 	* [Step 2. Find the sequence data](part2-4/#A2)
-	* [Step 3. Quality plots]([part2-4/#A3)
+	* [Step 3. Quality plots](part2-4/#A3)
 	* [Step 4. Filter and trimm sequences](part2-4/#A4)
 	* [Step 5. Learn sequence error rates to build error models for denoise purpose](part2/#A5)
 	* [Step 6. De-replicate reads](part2-4/#A6)
