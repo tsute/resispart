@@ -62,7 +62,7 @@ sample.names
 
 <img src="https://i.gyazo.com/af5b6e496e6b3e79476a26b02cf2b64d.png">
 
-In this workshop we have all together 3,383,251 x 2 sequences in 12 samples (each sample has two files R1 and R2). These are called pair-end reads. The Illumina sequencer can sequence both ends of a DNA amplicon at the same time, expanding the sequence length and span. If the two reads overlap enough we can also merge them together into a single sequence from each pair of the reads. We will process them seperately first for quality filtering and later merge them together for downstream analysis.
+In this workshop we have all together 3,383,251 x 2 sequences in 12 samples (each sample has two files R1 and R2). These are called pair-end reads. The Illumina sequencer can sequence both ends of a DNA amplicon at the same time, expanding the sequence length and span. If the two reads overlap enough we can also merge them together into a single sequence from each pair of the reads. We will process them separately first for quality filtering and later merge them together for downstream analysis.
 
 
 <a name="A3">
