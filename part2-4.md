@@ -35,7 +35,7 @@ The file size is 1.1Gb so it may take some time to download, depending on the In
 
 <table bgcolor="#C8FBD3"><tr><td style="font-size:0.8em" width="100%">
 If the above link doesn't work try one of these alternative download links:<br><br>
-<a href="ftp://www.homd.org/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip">HOMD Download Link</a><br>
+<a href="https://bioinformatics.forsyth.org/ftp/pub/resistpart/RESISPART_Bioinformatics_Workshop_Demo.zip">Forsyth Bioinformatics Download Link</a><br>
   <a href="https://drive.google.com/open?id=1A5fHVqJ2Nfloxvs-Ej8E-F2MhawvVqxe">Google Drive</a><br>
   <a href="https://1drv.ms/u/s!Amu_vVYXMX9XicpMCEljLG-u59QPDw?e=vING0V">One Drive</a><br>
   <a href="https://www.dropbox.com/s/qm0gull017umtot/RESISPART_Bioinformatics_Workshop_Demo.zip?dl=0">Dropbox</a><br>
